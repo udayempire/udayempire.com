@@ -1,15 +1,11 @@
-import { Navbar } from "@/components/global/Navbar";
+// app/page.tsx
+import React from "react";
+import { BioSection } from "@/components/home/bioSection";
 
 export default function Home() {
   return (
-    <div className="h-full w-screen">
-      <div className="">
-        <Navbar />
-      </div>
-      <div>
-
-      </div>
+    <div className="w-10/12 mx-auto flex flex-col items-center mt-16 xl:ml-48">
+      <BioSection />
     </div>
-  )
-
+  );
 }
