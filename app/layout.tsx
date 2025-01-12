@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/global/theme-provider"
 import { Navbar } from "@/components/global/Navbar";
+import { geistVF } from "./fonts";
 // import { Inter } from "./fonts";
 
 
@@ -29,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} dark:bg-black  antialiased`}>
+      <body className={`${geistSans.variable} ${geistVF.className} dark:bg-black  antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

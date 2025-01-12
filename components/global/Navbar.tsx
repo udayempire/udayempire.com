@@ -18,12 +18,12 @@ export const Navbar = () => {
         }
     ]
     return <div className="flex justify-between items-center border-b border-zinc-700 p-4 mx-8">
-        <div className="">udayempire</div>
+        <div className="font-geist">udayempire</div>
         <div className="flex items-center  gap-10">
             <ModeToggle />
             {data.map((link, index) => (
                 <li className="list-none" key={index}>
-                    <Link className={`${geistVF.className} dark:hover:text-[#33E092] hover:text-blue-800 transition ease-in-out  transis text-md`} href={link.href}>{link.name}</Link>
+                    <Link className={`font-geist dark:hover:text-[#33E092] hover:text-blue-800 transition ease-in-out  transis text-md`} href={link.href}>{link.name}</Link>
                 </li>
             ))}
         </div>
