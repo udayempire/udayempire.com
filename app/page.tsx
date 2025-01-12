@@ -4,7 +4,6 @@ import { BioSection } from "@/components/home/bioSection";
 import { Technologies } from "@/components/home/technologies";
 import { ProjectCard } from "@/components/global/projectCard";
 import { Heading } from "@/components/ui/heading";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { projectsData } from "@/data/data";
 

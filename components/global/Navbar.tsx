@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { ModeToggle } from "../ui/theme-icon"
-import { geistVF, inter, ubuntu } from "@/app/fonts"
 
 export const Navbar = () => {
     const data = [

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/global/theme-provider"
 import { Navbar } from "@/components/global/Navbar";
@@ -8,17 +8,10 @@ import { Footer } from "@/components/global/Footer";
 // import { Inter } from "./fonts";
 
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: "udayempire",
   description: "This is my personal website",
