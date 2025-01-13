@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import { SocialIcons } from "./socialIcons";
 export const Footer = () => {
     return <div className="w-full  p-5 px-8 border-t mt-10  md:justify-between items-center">
