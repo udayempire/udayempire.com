@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ubuntu, geistVF } from "@/app/fonts";
 import WordRotate from "../ui/word-rotate";
 import TypingAnimation from "../ui/typing-animation";
+import { SocialIcons } from "../global/socialIcons";
 
 
 
@@ -13,6 +14,9 @@ export const BioSection = () => {
       <div className="flex flex-col gap-4">
         <h1 className={`${ubuntu.className} mt-4 text-5xl h-48 md:h-28`}>I&apos;m a <WordRotate words={[" Developer"," Tech Enthusiast"," Full Stack Developer"]}/>
         </h1>
+        <div className="mt-4">
+        <SocialIcons/>
+        </div>
         <div className={`${geistVF.className} dark:text-zinc-400 text-[rgba(161,161,170)] text-lg leading-7`}>
           <p className="mt-4 mb-6">
             I am a self-taught programmer specializing in Full Stack Development. I am working on numerous projects,
@@ -20,8 +24,7 @@ export const BioSection = () => {
             as a Tech Lead at Techvilla, where we help each other learn and grow in technology.
           </p>
           <p className="mt-2 mb-6">
-            I strongly believe in continuous learning and improving myself, so I try my best to learn in any situation
-            possible, favorable or not.
+            I'm also pursuing Bachelors of Technology in Computer Science with specialization in Artificial Intelligence and Machine Learning from LNCT Bhopal.
           </p>
           <p className="mt-2 mb-6">I&apos;m open to work, freelance, or collaborate.</p>
         </div>

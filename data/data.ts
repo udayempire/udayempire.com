@@ -32,7 +32,7 @@ export const projectsData=[
     {
         imgLink:"/projects/blog-writer.png",
         title:"AI Blogging Assistant",
-        desc:"AI Blogging App empowers you to create AI-generated blogs effortlessly. It features advanced tools like a text summarizer, Text to Voice and much more to streamline your content creation process.",
+        desc:"AI Blogging App empowers you to create AI-generated blogs effortlessly. It features advanced tools like a text summarizer, Text to Voice and much more to streamline your content creation process to next-level.",
         Technologies:"Typescript, React, TailwandCSS, PostgreSql, Prisma, Vercel, Cloudflare Workers",
         status:"In progress",
         previewLink:"https://github.com/udayempire/ueblogs",
