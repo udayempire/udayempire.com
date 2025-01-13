@@ -4,7 +4,6 @@ import { ubuntu, geistVF } from "@/app/fonts";
 import WordRotate from "../ui/word-rotate";
 import TypingAnimation from "../ui/typing-animation";
 import { SocialIcons } from "../global/socialIcons";
-import Link from "next/link";
 import ShimmerButton from "../ui/shimmer-button";
 
 
@@ -34,17 +33,10 @@ export const BioSection = () => {
       <div className="flex flex-col gap-4 items-center">
         <Image src="/photo.png" width={350} height={100} alt="Profile Photo" />
         <h1 className={`${ubuntu.className} text-4xl font-bold tracking-widest`}><TypingAnimation className="tracking-wider">Uday Kumar</TypingAnimation></h1>
-        {/* <Link 
-  href="/" 
-  className="border-2 border-black text-black font-ubuntu font-medium text-lg rounded-md py-2 px-5 bg-white 
-             transform transition-transform duration-300 hover:scale-105 active:scale-95"
->
-  Resume
-</Link> */}
-        <ShimmerButton  className="shadow-xl px-10 py-4  " borderRadius="10px">
-        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu">
-          Download Resume
-        </span>
+        <ShimmerButton className="shadow-xl px-10 py-4  " borderRadius="10px">
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu">
+            Download Resume
+          </span>
         </ShimmerButton>
       </div>
     </section>

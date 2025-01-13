@@ -15,7 +15,7 @@ interface projectCardProps {
 export const ProjectCard = ({ title, desc, technologies, status, previewLink, githubLink, imgLink }: projectCardProps) => {
     const router = useRouter()
     return (
-        <div className="flex flex-col mx-10  bg-[#0b0b0b]   rounded-lg  " style={{}}>
+        <div className="flex flex-col mx-10  bg-[#141414]   rounded-lg  " style={{}}>
             <div className="relative w-full h-72">
             <Image src={imgLink} fill alt="" className="rounded-t-md " />
             </div>
