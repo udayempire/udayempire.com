@@ -19,11 +19,11 @@ export const ProjectCard = ({ title, desc, technologies, status, previewLink, gi
             <div className="relative w-full h-72">
             <Image src={imgLink} fill alt="" className="rounded-t-md " />
             </div>
-            <div className="p-5 flex flex-col gap-5 ">
-                <h1 className="text-xl">{title}</h1>
-                <p className="dark:text-zinc-300 ">{desc}</p>
-                <p className="text-blue-500 font-light">{technologies}</p>
-                <p className="text-[#33E092]"><span className="text-white">Status: </span>{status}</p>
+            <div className="p-5 flex flex-col gap-2 ">
+                <h1 className="text-zinc-100 text-xl">{title}</h1>
+                <p className="dark:text-zinc-300 text-md  ">{desc}</p>
+                {/* <p className="text-blue-400 text-md"><span className="dark:text-zinc-100 text-md">Role: </span>{status}</p> */}
+                <p className="text-blue-500 font-light text-md ">{technologies}</p>
                 <div className="flex justify-center gap-10">
                     <Button className="border-2 border-white" variant="secondary" onClick={() => {
                         router.push( previewLink || "")

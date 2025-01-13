@@ -4,7 +4,7 @@ export const projectsData=[
         title:"Techvilla",
         desc:"Techvilla is a college club centered on coding competitions, hackathons, tech meetups, and public learning. As the Technical Lead, I focus on making this website and organizing events with the Team.",
         Technologies:"Typescript, NextJS, Tailwand, Vercel",
-        status:"Made and Maintained by Me",
+        status:"Technical Lead and Maintainer",
         previewLink:"https://techvilla.vercel.app/",
         githubLink:"https://github.com/techvillaLnct/Techvilla-Web"
 
@@ -12,9 +12,9 @@ export const projectsData=[
     {
         imgLink:"/projects/eventsphere-2.png",
         title:"Event Sphere",
-        desc:"Event Sphere is a community-building app connecting users to tech events, hackathons, and meetups across India. It also enables users to create and publish their own events. My role focused on frontend development.",
+        desc:"Event Sphere is a community-building app connecting users to tech events, hackathons, and meetups across India. It also enables users to create and publish their own events. My role focused on frontend development within Team.",
         Technologies:"Vite, React, Javascript, Redux, Tailwand, Vercel",
-        status:"Developing More",
+        status:"Frontend Developement",
         previewLink:"https://eventsphere-lemon.vercel.app/",
         githubLink:"https://github.com/udayempire/fibohacks-hackathon"
 
@@ -24,7 +24,7 @@ export const projectsData=[
         title:"Quickpay",
         desc:"Quickpay is a fake payment app I developed to explore full-stack technologies and a bank-like architecture. It allows users to add money from banks, transfer funds to other Quickpay accounts, and experiment with its features.",
         Technologies:"Typescript, NextJs, PostgreSql, Docker, Prisma, NextAuth, Tailwand, Vercel",
-        status:"In progress",
+        status:"Full Stack Development",
         previewLink:"https://github.com/udayempire/ueblogs",
         githubLink:"https://github.com/udayempire/ueblogs"
 
@@ -34,7 +34,7 @@ export const projectsData=[
         title:"GeoTrack",
         desc:"This was our Project for SIH 2024. It a geolocation based Attendence tracking system with phone and shows the data of employee on website.I worked as Web Developer in the Team while my friend Priyanshu made the Mobile App while Ayush covered the UI/UX.  ",
         Technologies:"Typescript, ReactJs, Firebase, Prisma, NextAuth, Tailwand, Vercel",
-        status:"Finished",
+        status:"Full Stack Development",
         previewLink:"https://gtrrack.vercel.app",
         githubLink:"https://github.com/udayempire/gail-sih"
 
@@ -44,7 +44,7 @@ export const projectsData=[
         title:"AI Blogging Assistant",
         desc:"AI Blogging App empowers you to create AI-generated blogs effortlessly. It features advanced tools like a text summarizer, Text to Voice and much more to streamline your content creation process to next-level.",
         Technologies:"Typescript, React, TailwandCSS, PostgreSql, Prisma, Vercel, Cloudflare Workers",
-        status:"In progress",
+        status:"Full Stack Development",
         previewLink:"https://github.com/udayempire/ueblogs",
         githubLink:"https://github.com/udayempire/ueblogs"
 
@@ -54,7 +54,7 @@ export const projectsData=[
         title:"Devsthanam",
         desc:"This is the landing page of Devsthanam for whom I was one of the Founding Member.Devsthanam Focuses on Connecting Indian Temples with Local People all over the world.I worked as the Frontend Developer in Devsthanam.",
         Technologies:"Javascript, HTML, CSS, PHP",
-        status:"Finished",
+        status:"Frontend Development",
         previewLink:"https://github.com/udayempire/ueblogs",
         githubLink:"https://github.com/udayempire/ueblogs"
 
@@ -62,9 +62,9 @@ export const projectsData=[
     {
         imgLink:"/projects/spotify.png",
         title:"Spotify Clone",
-        desc:"This is simple Spotify Clone which can actually play songs if its within folder.Works with all the features of a Music App",
+        desc:"This is simple Spotify Clone which can actually play songs if its within folder.Works with all the features of a Music App.",
         Technologies:"Javascript, HTML, CSS",
-        status:"Finished",
+        status:"Frontend Development",
         previewLink:"",
         githubLink:"https://github.com/udayempire/Spotify-Clone"
 
@@ -74,7 +74,7 @@ export const projectsData=[
         title:"Flipkart Clone",
         desc:"This is simple Flipkart Static Page Clone where we can see Products and Trends going on in Flipkart.",
         Technologies:"HTML, CSS",
-        status:"Finished",
+        status:"Fronetnd Development",
         previewLink:"",
         githubLink:"https://github.com/udayempire/Flipkart-Clone"
 

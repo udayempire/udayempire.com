@@ -24,7 +24,7 @@ export const BioSection = () => {
             as a Tech Lead at Techvilla, where we help each other learn and grow in technology.
           </p>
           <p className="mt-2 mb-6">
-            I&apos;m also pursuing Bachelors of Technology in Computer Science with specialization in Artificial Intelligence and Machine Learning from LNCT Bhopal.
+            I&apos;m in 2nd year pursuing Bachelors of Technology in Computer Science with specialization in Artificial Intelligence and Machine Learning from LNCT Bhopal.
           </p>
           <p className="mt-2 mb-6">{`I'm open to work, freelance, or collaborate :)`}</p>
         </div>
