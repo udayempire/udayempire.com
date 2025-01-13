@@ -14,7 +14,7 @@ export default function Home() {
       <Technologies />
       <Heading className=" text-left  w-full mt-10" text="My Top Projects" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-5">
-        {projectsData.map((data,index)=>(
+        {projectsData.slice(0,4).map((data,index)=>(
           <ProjectCard key={index} title={data.title} desc={data.desc} technologies={data.Technologies} previewLink={data.previewLink}
           githubLink={data.githubLink} imgLink={data.imgLink} status={data.status} />
         ))}

@@ -11,7 +11,7 @@ export const BioSection = () => {
     <section className="grid grid-cols-1 md:grid-cols-2 gap-20 justify-items-center items-center">
       {/* Left Section */}
       <div className="flex flex-col gap-4">
-        <h1 className={`${ubuntu.className} text-5xl `}>I&apos;m a <WordRotate words={[" Developer"," Tech Enthusiast"," Web Developer"]}/>
+        <h1 className={`${ubuntu.className} mt-4 text-5xl h-48 md:h-28`}>I&apos;m a <WordRotate words={[" Developer"," Tech Enthusiast"," Full Stack Developer"]}/>
         </h1>
         <div className={`${geistVF.className} dark:text-zinc-400 text-[rgba(161,161,170)] text-lg leading-7`}>
           <p className="mt-4 mb-6">
@@ -29,7 +29,7 @@ export const BioSection = () => {
       {/* Right Section*/}
       <div className="flex flex-col gap-4 items-center">
         <Image src="/photo.png" width={350} height={100} alt="Profile Photo" />
-        <h1 className={`${ubuntu.className} text-4xl font-bold`}><TypingAnimation>Uday Kumar</TypingAnimation></h1>
+        <h1 className={`${ubuntu.className} text-4xl font-bold tracking-widest`}><TypingAnimation className="tracking-wider">Uday Kumar</TypingAnimation></h1>
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ export const ProjectCard = ({ title, desc, technologies, status, previewLink, gi
             </div>
             <div className="p-5 flex flex-col gap-5 ">
                 <h1 className="text-xl">{title}</h1>
-                <p className="dark:text-zinc-300">{desc}</p>
+                <p className="dark:text-zinc-300 ">{desc}</p>
                 <p className="text-blue-600">{technologies}</p>
                 <p className="text-[#33E092]"><span className="text-white">Status: </span>{status}</p>
                 <div className="flex justify-center gap-10">
