@@ -1,7 +1,7 @@
 import { SocialIcons } from "./socialIcons";
 export const Footer = () => {
     return (
-    <footer className="w-full  p-5 px-8 border-t mt-10  md:justify-between items-center">
+    <footer className="w-full   p-5 px-8 border-t mt-10  md:justify-between items-center">
         <div className=" md:flex items-center md:items-center justify-between gap-4">
             <div className="flex gap-4 items-center justify-center mb-4 md:mb-0">
                 <SocialIcons />
