@@ -1,5 +1,6 @@
+"use client"
 import React, { CSSProperties } from "react";
-
+import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 export interface ShimmerButtonProps
@@ -11,10 +12,12 @@ export interface ShimmerButtonProps
   background?: string;
   className?: string;
   children?: React.ReactNode;
+  href?:string;
 }
 
 const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
   (
+    
     {
       shimmerColor = "#ffffff",
       shimmerSize = "0.05em",
@@ -23,10 +26,12 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
       background = "rgba(0, 0, 0, 1)",
       className,
       children,
+      href,
       ...props
     },
     ref,
   ) => {
+    const router = useRouter()
     return (
       <button
         style={
@@ -46,7 +51,12 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
         )}
         ref={ref}
         {...props}
+
+        onClick={()=>{
+          router.push(`${href}`)
+        }}
       >
+        
         {/* spark container */}
         <div
           className={cn(

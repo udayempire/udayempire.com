@@ -33,7 +33,7 @@ export const BioSection = () => {
       <div className="flex flex-col gap-4 items-center">
         <Image src="/photo.png" width={350} height={100} alt="Profile Photo" />
         <h1 className={`${ubuntu.className} text-4xl font-bold tracking-widest`}><TypingAnimation className="tracking-wider">Uday Kumar</TypingAnimation></h1>
-        <ShimmerButton className="shadow-xl px-10 py-4  " borderRadius="10px">
+        <ShimmerButton href="/" className="shadow-xl px-10 py-4  " borderRadius="10px">
           <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu">
             Download Resume
           </span>

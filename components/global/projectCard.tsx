@@ -6,18 +6,17 @@ interface projectCardProps {
     title: string,
     desc: string,
     technologies: string,
-    status?: string,
     previewLink?: string,
     githubLink?: string,
     imgLink: string
 }
 
-export const ProjectCard = ({ title, desc, technologies, status, previewLink, githubLink, imgLink }: projectCardProps) => {
+export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink, imgLink }: projectCardProps) => {
     const router = useRouter()
     return (
         <div className="flex flex-col md:mx-10  bg-[#141414]   rounded-lg  " style={{}}>
-            <div className="relative w-full h-48">
-            <Image src={imgLink} fill alt="" className="rounded-t-md " />
+            <div className="relative w-full h-48 md:h-72">
+                <Image src={imgLink} fill alt="" className="rounded-t-md " />
             </div>
             <div className="p-4 md:p-5 flex flex-col gap-2 ">
                 <h1 className="text-zinc-100  md:text-xl">{title}</h1>
@@ -25,18 +24,17 @@ export const ProjectCard = ({ title, desc, technologies, status, previewLink, gi
                 {/* <p className="text-blue-400 text-md"><span className="dark:text-zinc-100 text-md">Role: </span>{status}</p> */}
                 <p className="text-blue-500 font-light text-sm md:text-md ">{technologies}</p>
                 <div className="flex justify-center gap-10 mt-2">
-                    <Button className="border-2 border-white " variant="secondary" onClick={() => {
-                        router.push( previewLink || "")
-                    }}
-
-                    >Preview</Button>
-                    <Button className="" variant={"secondary"}
+                    {previewLink && <Button className="border-2 border-white " variant="secondary" onClick={() => {
+                        router.push(previewLink || "")
+                    }}>Preview</Button>}
+                    {githubLink && (<Button className="" variant={"secondary"}
                         onClick={() => {
-                            router.push( githubLink || "")
+                            router.push(githubLink || "")
                         }}
-                    >Github</Button>
+                    >Github</Button>)
+                    }
+                </div>
             </div>
-        </div>
         </div >
     )
 }

@@ -12,7 +12,7 @@ export const projectsData=[
     {
         imgLink:"/projects/eventsphere-2.png",
         title:"Event Sphere",
-        desc:"Event Sphere is a community-building app connecting users to tech events, hackathons, and meetups across India. It also enables users to create and publish their own events. My role focused on frontend development within Team.",
+        desc:"Event Sphere is a community-building app connecting users to tech events, hackathons, and meetups across India. It enables users to create and publish their own events. My role focused on frontend development within Team.",
         Technologies:"Vite, React, Javascript, Redux, Tailwand, Vercel",
         status:"Frontend Developement",
         previewLink:"https://eventsphere-lemon.vercel.app/",
@@ -23,10 +23,10 @@ export const projectsData=[
         imgLink:"/projects/quickpay.png",
         title:"Quickpay",
         desc:"Quickpay is a fake payment app I developed to explore full-stack technologies and a bank-like architecture. It allows users to add money from banks, transfer funds to other Quickpay accounts, and experiment with its features.",
-        Technologies:"Typescript, NextJs, PostgreSql, Docker, Prisma, NextAuth, Tailwand, Vercel",
+        Technologies:"Turborepo, Typescript, NextJs, PostgreSql, Docker, CI pipeline, Prisma, NextAuth, Tailwand, Vercel",
         status:"Full Stack Development",
-        previewLink:"https://github.com/udayempire/ueblogs",
-        githubLink:"https://github.com/udayempire/ueblogs"
+        // previewLink:"https://github.com/udayempire/ueblogs",
+        githubLink:"https://github.com/udayempire/Quickpay-2"
 
     },
     {
@@ -40,23 +40,23 @@ export const projectsData=[
 
     },
     {
-        imgLink:"/projects/blog-writer.png",
-        title:"AI Blogging Assistant",
-        desc:"AI Blogging App empowers you to create AI-generated blogs effortlessly. It features advanced tools like a text summarizer, Text to Voice and much more to streamline your content creation process to next-level.",
+        imgLink:"/projects/blog-writer-2.png",
+        title:"Full Stack Blogging App",
+        desc:"This app lets users write blogs and explore blogs shared by others in their personalized feed. Users can sign up and sign in using secure JWT authentication. The backend is hosted on an edge server, ensuring fast performance and scalability.",
         Technologies:"Typescript, React, TailwandCSS, PostgreSql, Prisma, Vercel, Cloudflare Workers",
         status:"Full Stack Development",
-        previewLink:"https://github.com/udayempire/ueblogs",
+        // previewLink:"https://github.com/udayempire/ueblogs",
         githubLink:"https://github.com/udayempire/ueblogs"
 
     },
     {
         imgLink:"/projects/devsthanam.png",
         title:"Devsthanam",
-        desc:"This is the landing page of Devsthanam for whom I was one of the Founding Member.Devsthanam Focuses on Connecting Indian Temples with Local People all over the world.I worked as the Frontend Developer in Devsthanam.",
+        desc:"This is the landing page of Devsthanam App for whom I was one of the Founding Member.Devsthanam Focuses on Connecting Indian Temples with Local People all over the world.I worked as the Frontend Developerand for overall Mangement in Devsthanam.",
         Technologies:"Javascript, HTML, CSS, PHP",
         status:"Frontend Development",
-        previewLink:"https://github.com/udayempire/ueblogs",
-        githubLink:"https://github.com/udayempire/ueblogs"
+        previewLink:"https://devsthanam.in.net/",
+        githubLink:"https://github.com/udayempire/devsthanam-landing.git"
 
     },
     {
@@ -65,7 +65,7 @@ export const projectsData=[
         desc:"This is simple Spotify Clone which can actually play songs if its within folder.Works with all the features of a Music App.",
         Technologies:"Javascript, HTML, CSS",
         status:"Frontend Development",
-        previewLink:"",
+        // previewLink:"",
         githubLink:"https://github.com/udayempire/Spotify-Clone"
 
     },
@@ -75,7 +75,7 @@ export const projectsData=[
         desc:"This is simple Flipkart Static Page Clone where we can see Products and Trends going on in Flipkart.",
         Technologies:"HTML, CSS",
         status:"Fronetnd Development",
-        previewLink:"",
+        // previewLink:"",
         githubLink:"https://github.com/udayempire/Flipkart-Clone"
 
     },

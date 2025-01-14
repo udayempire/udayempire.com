@@ -1,7 +1,6 @@
 "use client"
 import Link from "next/link"
 import { ModeToggle } from "../ui/theme-icon"
-import { useState } from "react";
 import { Menu } from "lucide-react";
 import {
     DropdownMenu,
@@ -10,12 +9,10 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 export const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false)
-    const toggleMenu = () => {
-        setIsOpen(!isOpen)
-    }
+    const router = useRouter()
     const data = [
         {
             name: "Home",
@@ -43,9 +40,9 @@ export const Navbar = () => {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
                         <DropdownMenuItem><ModeToggle></ModeToggle></DropdownMenuItem>
-                        <DropdownMenuItem>Home</DropdownMenuItem>
-                        <DropdownMenuItem>Projects</DropdownMenuItem>
-                        <DropdownMenuItem>Blogs</DropdownMenuItem>
+                        <DropdownMenuItem onClick={()=>{router.push('/')}} >Home</DropdownMenuItem>
+                        <DropdownMenuItem onClick={()=>{router.push('/projects')}} >Projects</DropdownMenuItem>
+                        <DropdownMenuItem onClick={()=>{router.push('/blogs')}} >Blogs</DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
