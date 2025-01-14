@@ -5,8 +5,7 @@ import { ThemeProvider } from "@/components/global/theme-provider"
 import { Navbar } from "@/components/global/Navbar";
 import { geistVF } from "./fonts";
 import { Footer } from "@/components/global/Footer";
-import { Analytics } from '@vercel/analytics/next';
-
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +23,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head><link rel="icon" href="/favicon_io/favicon.ico" sizes="any" /></head>
+      <head>
+        <link rel="icon" href="/favicon_io/favicon.ico" sizes="any" />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-KGPKJYBJR5"></Script>
+        <Script id="google-analytics">
+          {`  window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+               gtag('js', new Date());
+               gtag('config', 'G-KGPKJYBJR5');`}
+        </Script>
+      </head>
       <body className={`${geistSans.variable} ${geistVF.className} dark:bg-black bg-white  antialiased`}>
         <ThemeProvider
           attribute="class"
@@ -34,7 +42,6 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
-          <Analytics/>
           <Footer />
         </ThemeProvider>
       </body>
