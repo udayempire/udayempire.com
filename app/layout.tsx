@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist} from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/global/theme-provider"
 import { Navbar } from "@/components/global/Navbar";
@@ -24,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><link rel="icon" href="/favicon_io/favicon.ico" sizes="any" /></head>
       <body className={`${geistSans.variable} ${geistVF.className} dark:bg-black bg-white  antialiased`}>
         <ThemeProvider
           attribute="class"
@@ -31,9 +32,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar/>
+          <Navbar />
           {children}
-          <Footer/>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

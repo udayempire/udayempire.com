@@ -12,7 +12,7 @@ export const Blog = () => {
                     <CalendarDays />
                     <div className="">14th Jan 2025</div>
                 </div>
-                <div className="flex gap-2 items-center text-xs  ">
+                <div className="flex gap-2 items-center text-xs w-full  ">
                     <ClockIcon />
                     <div>2 min read</div>
                 </div>

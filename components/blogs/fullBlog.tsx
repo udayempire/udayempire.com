@@ -5,8 +5,8 @@ import Image from "next/image"
 export const FullBlog = () => {
     return <div className="w-full">
         <div className="max-w-7xl">
-            <div>
-                <h1 className="font-ubuntu text-5xl w-full text-left ">React vs Angular what suits?</h1>
+            <div> 
+                <h1 className="font-ubuntu text-4xl md:text-5xl w-full text-left  ">React vs Angular what suits?</h1>
                 <div className="mt-5 dark:text-zinc-300 text-zinc-600">
                     <div className="flex justify-between">
                         <div className="flex gap-2 px-5 py-2 items-center text-sm w-full  ">
@@ -21,7 +21,7 @@ export const FullBlog = () => {
                 </div>
             </div>
             <div className="p-5 text-lg flex flex-col ">
-                <div className="flex justify-start h-80 my-3 rounded-md">
+                <div className="flex justify-start h-44 md:h-80 my-3 rounded-md">
                     <Image className="rounded-lg" src={"/blogs/react-angular-2.png"} width={1300} height={100} alt="" />
                 </div>
                 <Heading className="my-1 mt-4" text="Brief" />
