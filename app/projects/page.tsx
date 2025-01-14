@@ -11,7 +11,7 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5">
                 {projectsData.map((data, index) => (
                     <ProjectCard key={index} title={data.title} desc={data.desc} technologies={data.Technologies} previewLink={data.previewLink}
-                        githubLink={data.githubLink} imgLink={data.imgLink} status={data.status} />
+                        githubLink={data.githubLink} imgLink={data.imgLink} role={data.role} />
                 ))}
             </div>
         </div>

@@ -16,7 +16,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10  gap-5">
         {projectsData.slice(0,4).map((data,index)=>(
           <ProjectCard key={index} title={data.title} desc={data.desc} technologies={data.Technologies} previewLink={data.previewLink}
-          githubLink={data.githubLink} imgLink={data.imgLink}  />
+          githubLink={data.githubLink} imgLink={data.imgLink} role={data.role}  />
         ))}
       </div>
       <ShimmerButton href="/projects" className="shadow-xl px-4 py-2 mt-8 text-black " borderRadius="10px" shimmerColor="#702963" shimmerSize="2px"  background="#fff">

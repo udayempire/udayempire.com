@@ -8,10 +8,11 @@ interface projectCardProps {
     technologies: string,
     previewLink?: string,
     githubLink?: string,
-    imgLink: string
+    imgLink: string,
+    role?:string,
 }
 
-export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink, imgLink }: projectCardProps) => {
+export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink, imgLink,role }: projectCardProps) => {
     const router = useRouter()
     return (
         <div className="flex flex-col md:mx-10  bg-[#141414]   rounded-lg  " style={{}}>
@@ -21,7 +22,7 @@ export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink
             <div className="p-4 md:p-5 flex flex-col gap-2 ">
                 <h1 className="text-zinc-100  md:text-xl">{title}</h1>
                 <p className="dark:text-zinc-300 text-sm  md:text-md  ">{desc}</p>
-                {/* <p className="text-blue-400 text-md"><span className="dark:text-zinc-100 text-md">Role: </span>{status}</p> */}
+                <p className="text-blue-400 text-md"><span className="dark:text-zinc-100 text-md">Role: </span>{role}</p>
                 <p className="text-blue-500 font-light text-sm md:text-md ">{technologies}</p>
                 <div className="flex justify-center gap-10 mt-2">
                     {previewLink && <Button className="border-2 border-white " variant="secondary" onClick={() => {
