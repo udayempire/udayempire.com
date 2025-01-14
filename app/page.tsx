@@ -9,7 +9,7 @@ import  ShimmerButton  from "@/components/ui/shimmer-button";
 
 export default function Home() {
   return (
-    <div className="w-10/12 h-full mx-auto flex flex-col items-center mt-16 xl:ml-48 ">
+    <div className=" w-10/12 h-full mx-auto flex flex-col items-center mt-16 xl:ml-48 ">
       <BioSection />
       <Technologies />
       <Heading className=" text-left  w-full mt-10" text="My Top Projects" />

@@ -12,12 +12,12 @@ export const BioSection = () => {
     <section className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-20 justify-items-center items-center">
       {/* Left Section */}
       <div className="flex flex-col gap-4">
-        <h1 className={`${ubuntu.className} mt-4 text-4xl md:text-5xl h-32  md:h-28`}>I&apos;m a <WordRotate words={[" Developer", " Tech Enthusiast", " Full Stack Developer"]} />
+        <h1 className={`${ubuntu.className} mt-4 text-4xl md:text-5xl h-32  md:h-28 font-bold `}>I&apos;m a <WordRotate className="font-bold" words={[" Developer", " Tech Enthusiast", " Full Stack Developer"]} />
         </h1>
         <div className="mt-5 md:mt-9">
           <SocialIcons />
         </div>
-        <div className={`${geistVF.className} dark:text-zinc-400 text-md md:text-lg text-[rgba(161,161,170)]  leading-7`}>
+        <div className={`${geistVF.className} dark:text-zinc-400 text-zinc-600 text-md md:text-lg  leading-7`}>
           <p className="mt-2 mb-6">
             I&apos;m a self-taught programmer specializing in Full Stack Development. I&apos;m working on numerous projects,
             actively participating in hackathons, and trying my hand at open-source contributions. Currently, I serve

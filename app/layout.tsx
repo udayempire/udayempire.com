@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistVF.className} dark:bg-black  antialiased`}>
+      <body className={`${geistSans.variable} ${geistVF.className} dark:bg-black bg-white  antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
