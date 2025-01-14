@@ -11,11 +11,12 @@ interface projectCardProps {
     imgLink: string,
     role?:string,
 }
+import { Slide } from "../ui/slide"
 
 export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink, imgLink,role }: projectCardProps) => {
     const router = useRouter()
     return (
-        <div className="flex flex-col md:mx-10  dark:bg-[#141414] bg-slate-50 shadow-lg hover:scale-105 transition-transform  rounded-lg  ">
+        <Slide delay={.18} className="flex flex-col md:mx-10  dark:bg-[#141414] bg-slate-50 shadow-lg hover:scale-105 transition-transform  rounded-lg  ">
             <div className="relative w-full h-48 md:h-72">
                 <Image src={imgLink} fill alt="" className="rounded-t-md " />
             </div>
@@ -36,6 +37,6 @@ export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink
                     }
                 </div>
             </div>
-        </div >
+        </Slide >
     )
 }
