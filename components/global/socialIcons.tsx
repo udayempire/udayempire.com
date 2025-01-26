@@ -8,7 +8,7 @@ export const SocialIcons = () => {
         <Link href={"https://www.linkedin.com/in/uday-kumar-empire07/"} target="_blank"   >
             <Image src="/icons/linkedin.svg" width="30" height="40" alt="linked" className="hover:scale-150 transition-transform bg-black rounded-full" />
         </Link>
-        <Link href={"https://x.com/UdayEmpire003"} target="_blank" >
+        <Link href={"https://x.com/udayempire_"} target="_blank" >
             <Image src="/icons/X.svg" width="30" height="40" alt="X" className="hover:scale-[1.8]  transition-transform bg-black rounded-full" />
         </Link>
         <Link href={"https://www.instagram.com/udayempire07/"} target="_blank" >
