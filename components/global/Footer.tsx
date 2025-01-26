@@ -16,7 +16,7 @@ export const Footer = () => {
                 </div>
                 {/* Mobile View */}
                 <div className="md:hidden flex gap-3 justify-between items-center">
-                    <div className="font-light text-xs">© Made by Uday 2025</div>
+                    <div className="font-light text-xs">© Made with ❤️ by Uday 2025</div>
                     <div className="flex items-center gap-3">
                         <div className="bg-green-500 animate-pulse rounded-full w-2 h-2"></div>
                         <p className="font-light text-xs">Last Updated 26/01/25</p>
