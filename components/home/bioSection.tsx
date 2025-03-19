@@ -14,7 +14,7 @@ export const BioSection = () => {
       {/* Left Section */}
       <div className="flex flex-col gap-4">
         <Slide delay={.05}>
-          <h1 className={`${ubuntu.className} mt-4 text-4xl md:text-5xl h-32  md:h-28 font-bold `}>I&apos;m a <WordRotate className="font-bold" words={[" Developer", " Tech Enthusiast", " Full Stack Developer"]} />
+          <h1 className={`${ubuntu.className} mt-4 text-4xl md:text-5xl h-32  md:h-28 font-bold `}>I&apos;m a <WordRotate className="font-bold" words={["Software Developer", " Tech Enthusiast", " Full Stack Developer"]} />
           </h1>
 
         </Slide>
@@ -25,7 +25,7 @@ export const BioSection = () => {
           <Slide delay={.10}>
             <p className="mt-2 mb-6">
               I&apos;m a self-taught programmer specializing in Full Stack Development. I&apos;m working on numerous projects,
-              actively participating in hackathons, and trying my hand at open-source contributions. Currently, I serve
+              actively participating in hackathons, and trying my hand at Web3 and open source contributions. Currently, I serve
               as a Tech Lead at Techvilla, where we help each other learn and grow in technology.
             </p>
           </Slide>
