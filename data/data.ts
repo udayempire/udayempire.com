@@ -1,5 +1,15 @@
 export const projectsData=[
     {
+        imgLink:"/projects/ghostwallet.png",
+        title:"Ghost Wallet",
+        desc:"This is a web based wallet to create your crypto accounts or check anyone's crypto balances,data and other",
+        Technologies:"Typescript, NextJS, ethers lib, web3.js, Tailwand, Vercel",
+        role:"Full Stack Development",
+        previewLink:"https://ghostwallet.udayempire.tech/",
+        githubLink:"https://github.com/udayempire/ghost-wallet"
+
+    },
+    {
         imgLink:"/projects/techvilla.png",
         title:"Techvilla",
         desc:"Techvilla is a college club centered on coding competitions, hackathons, tech meetups, and public learning. As the Technical Lead, I focus on making this website and organizing events with the Team.",
