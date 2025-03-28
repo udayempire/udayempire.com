@@ -2,8 +2,8 @@ export const projectsData=[
     {
         imgLink:"/projects/ghostwallet.png",
         title:"Ghost Wallet",
-        desc:"This is a web based wallet to create your crypto accounts or check anyone's crypto balances,data and other",
-        Technologies:"Typescript, NextJS, ethers lib, web3.js, Tailwand, Vercel",
+        desc:"A web-based crypto wallet that lets you create crypto accounts or check the balances, data, and other details of any public crypto address. Supports popular networks like Solana and Ethereum with a simple, intuitive interface.",
+        Technologies:"Typescript, NextJS, Ethers lib, Web3.js, Tailwand, Vercel",
         role:"Full Stack Development",
         previewLink:"https://ghostwallet.udayempire.tech/",
         githubLink:"https://github.com/udayempire/ghost-wallet"
@@ -30,6 +30,16 @@ export const projectsData=[
 
     },
     {
+        imgLink:"/projects/geotrack.png",
+        title:"GeoTrack",
+        desc:"This was our Project for SIH 2024. It a geolocation based Attendence tracking system with phone and shows the data of employee on website.I worked as Web Developer in the Team while my friend Priyanshu made the Mobile App while Ayush covered the UI/UX.  ",
+        Technologies:"Typescript, ReactJs, Firebase, Prisma, Tailwand, Vercel",
+        role:"Full Stack Development",
+        previewLink:"https://gtrrack.vercel.app",
+        githubLink:"https://github.com/udayempire/gail-sih"
+
+    },
+    {
         imgLink:"/projects/quickpay.png",
         title:"Quickpay",
         desc:"Quickpay is a fake payment app I developed to explore full-stack technologies and a bank-like architecture. It allows users to add money from banks, transfer funds to other Quickpay accounts, and experiment with its features.",
@@ -37,16 +47,6 @@ export const projectsData=[
         role:"Full Stack Development",
         // previewLink:"https://github.com/udayempire/ueblogs",
         githubLink:"https://github.com/udayempire/Quickpay-2"
-
-    },
-    {
-        imgLink:"/projects/geotrack.png",
-        title:"GeoTrack",
-        desc:"This was our Project for SIH 2024. It a geolocation based Attendence tracking system with phone and shows the data of employee on website.I worked as Web Developer in the Team while my friend Priyanshu made the Mobile App while Ayush covered the UI/UX.  ",
-        Technologies:"Typescript, ReactJs, Firebase, Prisma, NextAuth, Tailwand, Vercel",
-        role:"Full Stack Development",
-        previewLink:"https://gtrrack.vercel.app",
-        githubLink:"https://github.com/udayempire/gail-sih"
 
     },
     {
