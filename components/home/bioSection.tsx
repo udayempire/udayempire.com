@@ -6,7 +6,7 @@ import TypingAnimation from "../ui/typing-animation";
 import { SocialIcons } from "../global/socialIcons";
 import ShimmerButton from "../ui/shimmer-button";
 import { Slide } from "../ui/slide";
-
+import Link from "next/link";
 
 export const BioSection = () => {
   return (
@@ -35,7 +35,7 @@ export const BioSection = () => {
             </p>
           </Slide>
           <Slide delay={.25}>
-            <p className="mt-2 mb-6">{`I'm open to work, freelance, or collaborate :)`}</p>
+            <p className="mt-2 mb-6 text-zinc-100">I am open to work, freelance, or collaborate Just message me on any of my <Link href={'https://linktr.ee/udayempire'} className="underline underline-offset-4 text-blue-600" target="_blank" rel="noopener noreferrer">social links</Link></p>
 
           </Slide>
         </div>
@@ -47,11 +47,11 @@ export const BioSection = () => {
         </Slide>
         <Slide delay={.1} className={`${ubuntu.className} text-4xl font-bold tracking-widest`}><TypingAnimation className="tracking-wider">Uday Kumar</TypingAnimation></Slide>
         <Slide delay={.2}>
-        <ShimmerButton href="https://drive.google.com/file/d/1mQNS6_rbjHFqK_D84dSNvB15_gG0CYf8/view?usp=drive_link" className="shadow-xl px-10 py-4  " borderRadius="10px">
-          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu">
-            Download Resume
-          </span>
-        </ShimmerButton>
+          <ShimmerButton href="https://drive.google.com/file/d/1mQNS6_rbjHFqK_D84dSNvB15_gG0CYf8/view?usp=drive_link" className="shadow-xl px-10 py-4  " borderRadius="10px">
+            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu">
+              Download Resume
+            </span>
+          </ShimmerButton>
 
         </Slide>
       </div>
