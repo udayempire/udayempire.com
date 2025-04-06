@@ -134,10 +134,10 @@ export default function reactBlog() {
                             </ul>
 
                             <Heading text="Would I do it again?" className="my-4" />
-                            <Para className="" text="Hell yes. It was frustrating, tiring, and disappointing after continously working for 2 days and barely sleeping. But it was also exciting, challenging, and packed with learning. I got to know there is a lot I need to learn and grow." />
-
+                            <Para className="" text="Hell yes. It was frustrating, tiring, and disappointing after continously working for 2 days and barely sleeping. But it was also exciting, challenging, and packed with learning. I got to know there is a lot I need to learn and grow. " />
+                            <Para text="Traveling to Delhi, Free Food, Jamming Session, Experience with new people is a lifetime experience. I wish I could have overcome the loss and could visit different places of delhi as it was my first time there but I couldnt. Maybe Next Time things would be different and better." />
                             <div className="mt-2">
-                                <Para text="If you read till here, you're a real one ❤️. Feel free to connect with me with the socials below." />
+                                <Para text="If you reading till here, you're a real one ❤️. Feel free to connect with me with the socials below." />
                             </div>
                         </div >
 
