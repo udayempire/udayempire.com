@@ -12,7 +12,7 @@ export default function reactBlog() {
                 <div className="w-full">
                     <div className="max-w-7xl">
                         <div>
-                            <h1 className="font-ubuntu text-4xl md:text-5xl w-full text-left text-black dark:text-zinc-200  ">My First Hackathon Experience</h1>
+                            <h1 className="font-ubuntu text-4xl md:text-5xl w-full text-left text-black dark:text-zinc-200  ">My First Hackathon Experience FT:- Code Nakshatra</h1>
                             <div className="mt-5 dark:text-zinc-300 text-zinc-600">
                                 <div className="flex justify-between">
                                     <div className="flex gap-2 px-5 py-2 items-center text-sm w-full  ">
@@ -32,7 +32,7 @@ export default function reactBlog() {
                             </div>
                             <Heading className="my-1 mt-4" text="Our Hackathon Experience: Building, Breaking & Learning" />
                             <Para
-                                text={"We got selected for a hackathon just 10 days before the event. There was no problem statement given, which made it 10x harder to even figure out what to build. Finally, on 27th March, I came up with this idea called Goal Staking. The concept was simple people would stake money on their personal goals, and if they completed it, they’d get their money back + extra rewards. (How those rewards come in—I'll save the details.  But if you're curious, ping me! Would love to discuss.) Since the idea was about trust, I thought—why not use smart contracts? Everything stays transparent. Anyone can read the contract and understand how the funds are handled.Also ETH india and polygon were sponsors along with eth 2024 winner as mentor which was COMPLETE SCAM by the hackathon incharges as non of them came. I really would have thought to build something else if I was aware of this but anyways lets move ahead."} />
+                                text={"We got selected for a hackathon named Code Nakshtara just 10 days before the event. There was no problem statement given, which made it 10x harder to even figure out what to build. Finally, on 27th March, I came up with this idea called Goal Staking. The concept was simple people would stake money on their personal goals, and if they completed it, they’d get their money back + extra rewards. (How those rewards come in—I'll save the details.  But if you're curious, ping me! Would love to discuss.) Since the idea was about trust, I thought—why not use smart contracts? Everything stays transparent. Anyone can read the contract and understand how the funds are handled.Also ETH india and polygon were sponsors along with eth 2024 winner as mentor which was COMPLETE SCAM by the hackathon incharges as non of them came. I really would have thought to build something else if I was aware of this but anyways lets move ahead."} />
                             <Heading className="my-2" text="Team Setup" />
                             <ul className="list-disc px-4 dark:text-zinc-300 text-zinc-600 ">
                                 <li>
