@@ -47,7 +47,7 @@ export const BioSection = () => {
         </Slide>
         <Slide delay={.1} className={`${ubuntu.className} text-4xl font-bold tracking-widest`}><TypingAnimation className="tracking-wider">Uday Kumar</TypingAnimation></Slide>
         <Slide delay={.2}>
-          <ShimmerButton href="https://drive.google.com/file/d/1mQNS6_rbjHFqK_D84dSNvB15_gG0CYf8/view?usp=drive_link" className="shadow-xl px-10 py-4  " borderRadius="10px">
+          <ShimmerButton href="https://drive.google.com/file/d/1ewwe3Dugxux_cgKF4JKTirEjx5j8rzu8/view?usp=drive_link" className="shadow-xl px-10 py-4  " borderRadius="10px">
             <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu">
               Download Resume
             </span>
