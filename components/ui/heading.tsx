@@ -6,7 +6,7 @@ interface HeadingProps{
 }
 
 export const Heading=({text,className}:HeadingProps)=>{
-    return <h1 className={cn(className,"text-2xl  font-ubuntu mt-10 mb-10 my-2 underline underline-offset-4 text-black dark:text-zinc-200",className)}>
+    return <h1 className={cn(className,"text-2xl  font-ubuntu mt-10 my-4 underline underline-offset-4 text-black dark:text-zinc-200",className)}>
         {text}
     </h1>
 

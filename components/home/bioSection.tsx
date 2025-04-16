@@ -35,7 +35,7 @@ export const BioSection = () => {
             </p>
           </Slide>
           <Slide delay={.25}>
-            <p className="mt-2 mb-6 text-zinc-100">I am open to work, freelance, or collaborate Just message me on any of my <Link href={'https://linktr.ee/udayempire'} className="underline underline-offset-4 text-blue-600" target="_blank" rel="noopener noreferrer">social links</Link></p>
+            <p className="mt-2 mb-6 dark:text-zinc-100 text-zinc-800">I am open to work, freelance, or collaborate Just message me on any of my <Link href={'https://linktr.ee/udayempire'} className="underline underline-offset-4 text-blue-600" target="_blank" rel="noopener noreferrer">social links</Link></p>
 
           </Slide>
         </div>
