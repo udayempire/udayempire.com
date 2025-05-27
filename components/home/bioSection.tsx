@@ -43,7 +43,7 @@ export const BioSection = () => {
       {/* Right Section*/}
       <div className="flex flex-col gap-4 items-center">
         <Slide delay={.05}>
-          <Image src="/photo.png" width={350} height={100} alt="Profile Photo" />
+          <Image src="https://github.com/udayempire.png" className="rounded-full" width={350} height={350} alt="Profile Photo" />
         </Slide>
         <Slide delay={.1} className={`${ubuntu.className} text-4xl font-bold tracking-widest`}><TypingAnimation className="tracking-wider">Uday Kumar</TypingAnimation></Slide>
         <Slide delay={.2}>
