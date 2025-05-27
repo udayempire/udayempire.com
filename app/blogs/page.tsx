@@ -7,6 +7,14 @@ import Image from "next/image"
 
 const blogs = [
   {
+    title: "What is IP Blockchain and 5 Project Ideas to Build Around It",
+    slug: "5-project-ideas-for-story-protocol",
+    image: "/blogs/IP-2.png",
+    date: "27th May 2025",
+    readTime: "3 min read",
+    excerpt: "Imagine writing a story, song, or code and proving it's yours forever. That's IP ...",
+  },
+  {
     title: "My First Hackathon Experience",
     slug: "my-first-hackathon-experience",
     image: "/blogs/hackathon-5.png",

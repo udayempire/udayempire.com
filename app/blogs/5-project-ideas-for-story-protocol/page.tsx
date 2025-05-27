@@ -49,14 +49,14 @@ export default function storyBlog() {
                   You can go through their
                   {"   "}
                   <Link
-                    href={"https://www.story.foundation/"}
+                    href={"https://www.story.foundation/"} target="_blank"
                     className="text-blue-500 underline underline-offset-2 cursor-pointer"
                   >
                     website
                   </Link>
                   {"   "}and{"   "}
                   <Link
-                    href={"https://www.story.foundation/whitepaper.pdf"}
+                    href={"https://www.story.foundation/whitepaper.pdf"} target="_blank"
                     className="text-blue-500 underline underline-offset-2 cursor-pointer"
                   >
                     white paper
