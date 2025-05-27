@@ -74,7 +74,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative  w-36 max-mx-4 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -82,8 +82,8 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-md" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
+        <img className="rounded-md" width="24" height="16" alt="" src={img} />
+        <div className="flex flex-col ">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}
           </figcaption>

@@ -41,11 +41,11 @@ export const BioSection = () => {
         </div>
       </div>
       {/* Right Section*/}
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-8 items-center md:mt-28">
         <Slide delay={.05}>
-          <Image src="https://github.com/udayempire.png" className="rounded-full" width={350} height={350} alt="Profile Photo" />
+          <Image src="https://github.com/udayempire.png" className="rounded-full w-44 md:w-72" width={350} height={350} alt="Profile Photo" />
         </Slide>
-        <Slide delay={.1} className={`${ubuntu.className} text-4xl font-bold tracking-widest`}><TypingAnimation className="tracking-wider">Uday Kumar</TypingAnimation></Slide>
+        <Slide delay={.1} className={`${ubuntu.className} text-2xl font-bold tracking-widest`}><TypingAnimation className="tracking-wider text-2xl md:text-4xl">Uday Kumar</TypingAnimation></Slide>
         <Slide delay={.2}>
           <ShimmerButton href="https://drive.google.com/file/d/1ewwe3Dugxux_cgKF4JKTirEjx5j8rzu8/view?usp=drive_link" className="shadow-xl px-10 py-4  " borderRadius="10px">
             <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu">
