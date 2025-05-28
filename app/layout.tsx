@@ -6,7 +6,7 @@ import { Navbar } from "@/components/global/Navbar";
 import { geistVF } from "./fonts";
 import { Footer } from "@/components/global/Footer";
 import Script from "next/script";
-
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,6 +34,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${geistSans.variable} ${geistVF.className} dark:bg-black bg-white  antialiased`}>
+        <ScrollProgress/>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

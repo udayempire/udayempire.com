@@ -8,10 +8,12 @@ import { projectsData } from "@/data/data";
 import ShimmerButton from "@/components/ui/shimmer-button";
 import GithubCalendarComponent from "@/components/home/githubCalendarComponent";
 import { Slide } from "@/components/ui/slide";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
 export default function Home() {
   return (
     <div className=" w-10/12 h-full mx-auto flex flex-col items-center mt-16 xl:ml-48 ">
+      <ScrollProgress/>
       <BioSection />
       <Technologies />
       <Slide className="w-full">
