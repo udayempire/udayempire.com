@@ -2,7 +2,6 @@ import { ProjectCard } from "@/components/global/projectCard";
 import { Heading } from "@/components/ui/heading";
 import { projectsData } from "@/data/data";
 import { Slide } from "@/components/ui/slide";
-import { Button } from "@/components/ui/button";
 import ShimmerButton from "@/components/ui/shimmer-button";
 
 export default function Projects() {
