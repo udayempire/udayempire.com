@@ -16,6 +16,7 @@ export const BioSection = () => {
         <Slide delay={.05}>
           <h1 className={`${ubuntu.className} mt-4 text-4xl md:text-5xl h-32  md:h-28 font-bold `}>I&apos;m a <WordRotate className="font-bold" words={["Software Developer", " Tech Enthusiast", " Full Stack Developer"]} />
           </h1>
+          
 
         </Slide>
         <Slide delay={.1} className="mt-5 md:mt-9">
@@ -24,19 +25,16 @@ export const BioSection = () => {
         <div className={`${geistVF.className} dark:text-zinc-400 text-zinc-600 text-md md:text-lg  leading-7`}>
           <Slide delay={.10}>
             <p className="mt-2 mb-6">
-              I&apos;m a self-taught programmer specializing in Full Stack Development. I&apos;m working on numerous projects,
-              actively participating in hackathons, and trying my hand at Web3 and open source contributions. Currently, I serve
-              as a Tech Lead at Techvilla, where we help each other learn and grow in technology.
+              I’m a Full Stack Developer (2+ years) and Web3 Developer (1+ year), building scalable applications across modern web and blockchain ecosystems. I actively participate in hackathons, contribute to open source, and currently take on freelance projects while building my own products.
             </p>
           </Slide>
           <Slide delay={.20}>
             <p className="mt-2 mb-6">
-              I&apos;m in 2nd year pursuing Bachelors of Technology in Computer Science with specialization in Artificial Intelligence and Machine Learning from LNCT Bhopal.
+              I&apos;m in my Pre Final year pursuing Bachelors of Technology in Computer Science with specialization in Artificial Intelligence and Machine Learning from LNCT Bhopal.
             </p>
           </Slide>
           <Slide delay={.25}>
             <p className="mt-2 mb-6 dark:text-zinc-100 text-zinc-800">I am open to work, freelance, or collaborate Just message me on any of my <Link href={'https://linktr.ee/udayempire'} className="underline underline-offset-4 text-blue-600" target="_blank" rel="noopener noreferrer">social links</Link></p>
-
           </Slide>
         </div>
       </div>

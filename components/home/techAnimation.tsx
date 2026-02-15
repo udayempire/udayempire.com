@@ -4,12 +4,20 @@ import Marquee from "@/components/ui/marquee";
 const reviews = [
     //upper half icons
     {
+      name:"Rust",
+      img: "/icons/rust.svg",
+    },
+    {
         name: "Javascript",
         img: "/icons/javascript.png", 
     },
     {
         name: "Typescript",
         img: "/icons/typescript.svg",
+    },
+    {
+      name: "C++",
+      img: "/icons/c++.svg",
     },
     {
         name: "React",
@@ -39,6 +47,10 @@ const reviews = [
   {
     name: "CSS",
     img: "/icons/css.svg",
+  },
+  {
+    name: "Solana",
+    img: "/icons/solana.svg",
   },
   {
     name: "prisma",
