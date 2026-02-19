@@ -2,6 +2,7 @@
 import React from "react";
 import { BioSection } from "@/components/home/bioSection";
 import { Technologies } from "@/components/home/technologies";
+import { WorkExperience } from "@/components/home/workExperience";
 import { ProjectCard } from "@/components/global/projectCard";
 import { Heading } from "@/components/ui/heading";
 import { projectsData } from "@/data/data";
@@ -16,6 +17,7 @@ export default function Home() {
       <ScrollProgress/>
       <BioSection />
       <Technologies />
+      <WorkExperience />
       <Slide className="w-full">
         <Heading className=" text-left  w-full mt-16" text="Github Contribution Graph" />
       </Slide>

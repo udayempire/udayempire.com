@@ -97,7 +97,7 @@ const ReviewCard = ({
         <img className="rounded-md" width="24" height="16" alt="" src={img} />
         <div className="flex flex-col ">
           <figcaption className="text-sm font-medium dark:text-white">
-            {name}
+            {name}  
           </figcaption>
         </div>
       </div>
