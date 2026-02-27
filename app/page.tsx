@@ -14,13 +14,16 @@ import { ScrollProgress } from "@/components/magicui/scroll-progress";
 export default function Home() {
   return (
     <div className=" w-10/12 h-full mx-auto flex flex-col items-center mt-16 xl:ml-48 ">
-      <ScrollProgress/>
+      <ScrollProgress />
       <BioSection />
       <Technologies />
-      <WorkExperience />
+      <Slide delay={.3}>
+        <WorkExperience />
+      </Slide>
       <Slide className="w-full">
         <Heading className=" text-left  w-full mt-16" text="Github Contribution Graph" />
       </Slide>
+
       <GithubCalendarComponent />
       <Slide className="w-full">
         <Heading className=" text-left  w-full mt-16" text="My Top Projects" />
