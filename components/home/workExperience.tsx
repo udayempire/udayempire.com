@@ -15,7 +15,7 @@ interface Experience {
 
 const experiencesData: Experience[] = [
   {
-    company: "Pixels and Grid",
+    company: "RealBros",
     date: "May 2025 - Nov 2025",
     role: "Full Stack Developer",
     description:
@@ -36,7 +36,7 @@ export const WorkExperience = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end end"],
+    offset: ["start 80%", "end 80%"],
   });
 
   const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
@@ -55,8 +55,13 @@ export const WorkExperience = () => {
         <div className="absolute left-4 md:left-8 top-0 bottom-0 w-[2px] bg-zinc-200 dark:bg-zinc-800">
            <motion.div
             style={{ height }}
-            className="w-full bg-gradient-to-b from-blue-500 via-purple-500 to-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.6)]"
-          />
+            className="w-full bg-gradient-to-b from-blue-500 via-purple-500 to-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.6)] relative"
+          >
+            {/* Moving timeline indicator circle */}
+            <div className="absolute -bottom-2 -left-[7px] w-4 h-4 rounded-full border border-blue-500 bg-white dark:bg-zinc-950 flex items-center justify-center z-20 shadow-[0_0_8px_rgba(59,130,246,0.6)]">
+              <div className="w-2 h-2 rounded-full bg-blue-500" />
+            </div>
+          </motion.div>
         </div>
 
         <div className="flex flex-col gap-12">
@@ -79,9 +84,7 @@ const ExperienceCard = ({
   return (
     <Slide delay={0.1 * index} className="relative">
       {/* Dot on the timeline */}
-      <div className="absolute -left-[39px] md:-left-[55px] top-6 w-4 h-4 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 flex items-center justify-center z-10 shadow-sm">
-        <div className="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)]" />
-      </div>
+
 
       <div className="bg-white dark:bg-zinc-900/50 p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300 hover:border-blue-500/30">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
