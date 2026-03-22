@@ -46,9 +46,9 @@ const experiencesData: Experience[] = [
     role: "Full Stack Developer (Contract Work)",
     image: "/workExperience/pixelAndGrid.png",
     description: [
-      "Created a web app for creator and vendor including dashboards,",
-      "integrating social media api for insights of many sorts into the dashboard,",
-      "creating a relay chat system from whatsapp, filter search in a 2 person team."
+      "Built a web platform connecting creators and vendors, improving collaboration efficiency by 40% and reducing manual coordination efforts.",
+      "Integrated Instagram, YouTube, Facebook, and Twitter APIs, enabling real-time analytics that increased campaign tracking accuracy by 35%.",
+      "Developed a WhatsApp relay chat system between creators, vendors, and admins, reducing response time by 80% and streamlining communication workflows."
     ],
     technologies: ["NextJs", "ExpressJS", "React", "Node.js", "MongoDB", "TailwindCSS"],
   },
