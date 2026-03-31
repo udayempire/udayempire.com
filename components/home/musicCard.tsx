@@ -22,6 +22,8 @@ type MusicCardData = {
     artistName: string;
     imageUrl: string;
     isPlaying: boolean;
+    positionSec?: number;
+    durationSec?: number;
     musicUrl?: string;
 };
 
@@ -41,6 +43,8 @@ export async function fetchNowPlaying(): Promise<MusicCardData | null> {
             imageUrl: payload.coverUrl,
             isPlaying: Boolean(payload.isPlaying),
             musicUrl: payload.songUrl || payload.musicUrl,
+            positionSec: payload.positionSec,
+            durationSec: payload.durationSec,
         };
     } catch (error) {
         console.error("fetchNowPlaying failed:", error);
@@ -55,6 +59,8 @@ export const MusicCard = () => {
         imageUrl: "https://via.placeholder.com/64x64?text=♪",
         isPlaying: false,
         musicUrl: undefined,
+        positionSec: undefined,
+        durationSec: undefined,
     });
 
     useEffect(() => {
@@ -76,12 +82,16 @@ export const MusicCard = () => {
 
     const label = useMemo(() => `${data.artistName}`, [data.artistName]);
 
+    const progressPercent = data.positionSec && data.durationSec 
+        ? Math.min(100, Math.max(0, (data.positionSec / data.durationSec) * 100))
+        : 0;
+
     return (
         <Link
             href={data.musicUrl || "#"}
             target={data.musicUrl ? "_blank" : undefined}
             rel={data.musicUrl ? "noopener noreferrer" : undefined}
-            className="group relative flex w-full max-w-sm  items-center gap-4 rounded-2xl border border-zinc-200/80 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/80 dark:bg-zinc-900 dark:hover:border-zinc-700"
+            className="group relative flex w-full max-w-[480px]  items-center gap-4 rounded-2xl border border-zinc-200/80 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-zinc-300 hover:shadow-md dark:border-zinc-800/80 dark:bg-zinc-900 dark:hover:border-zinc-700"
         >
             {/* Album Art & Equalizer */}
             <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg shadow-sm">
@@ -144,6 +154,13 @@ export const MusicCard = () => {
                         <path d="M8 5v14l11-7z" />
                     </svg>
                 )}
+            </div>
+            {/* Progress Playbar */}
+            <div className="absolute bottom-0 left-0 h-1 w-full bg-zinc-100 dark:bg-zinc-800">
+                <div 
+                    className="h-full bg-[#FF0000] transition-all duration-1000 ease-linear"
+                    style={{ width: `${progressPercent}%` }}
+                />
             </div>
         </Link>
     );
