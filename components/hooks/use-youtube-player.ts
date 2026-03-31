@@ -11,6 +11,11 @@ type YTPlayer = {
     getDuration: () => number;
 };
 
+type YTPlayerStateChangeEvent = {
+    data: number;
+    target: YTPlayer;
+};
+
 declare global {
     interface Window {
         YT?: {
@@ -79,7 +84,7 @@ export function useYouTubePlayer(videoId: string | null, playerElementId: string
                         setIsPlayerReady(true);
                         setDuration(player?.getDuration() ?? 0);
                     },
-                    onStateChange: (event) => {
+                    onStateChange: (event: YTPlayerStateChangeEvent) => {
                         if (event.data === window.YT!.PlayerState.PLAYING) {
                             console.log(`[Player Event] State changed to PLAYING for videoId: ${videoId}`);
                             setIsPlaying(true);

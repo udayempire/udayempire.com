@@ -43,7 +43,7 @@ function extractYouTubeVideoId(url?: string): string | null {
 
 async function fetchNowPlaying(): Promise<MusicCardData | null> {
     try {
-        const res = await fetch("http://localhost:4000/api/now-playing/uday-portfolio", { cache: "no-store" });
+        const res = await fetch(`${process.env.NEXT_PUBLIC_EXTENSION_URL}`, { cache: "no-store" });
         if (!res.ok) return null;
         const payload = (await res.json()) as NowPlayingApiPayload;
         if (!payload?.title) return null;
@@ -75,15 +75,6 @@ export const MusicCard = () => {
         const id = setInterval(load, 10000);
         return () => clearInterval(id);
     }, []);
-
-        // --- ADD THIS USEEFFECT HOOK ---
-    useEffect(() => {
-        const bgElement = document.getElementById("page-background");
-        if (bgElement && data?.imageUrl) {
-            bgElement.style.backgroundImage = `url(${data.imageUrl})`;
-        }
-    }, [data?.imageUrl]); // This effect runs when the image URL changes
-    // ---------------------------------
 
     const togglePlayback = () => {
         if (isPlaying) {
