@@ -1,10 +1,7 @@
-// components/hooks/use-youtube-player.ts
-
 "use client";
 
 import { useState, useEffect, useRef } from "react";
 
-// (Keep the type definitions)
 type YTPlayer = {
     playVideo: () => void;
     pauseVideo: () => void;

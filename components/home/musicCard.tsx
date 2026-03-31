@@ -76,6 +76,15 @@ export const MusicCard = () => {
         return () => clearInterval(id);
     }, []);
 
+        // --- ADD THIS USEEFFECT HOOK ---
+    useEffect(() => {
+        const bgElement = document.getElementById("page-background");
+        if (bgElement && data?.imageUrl) {
+            bgElement.style.backgroundImage = `url(${data.imageUrl})`;
+        }
+    }, [data?.imageUrl]); // This effect runs when the image URL changes
+    // ---------------------------------
+
     const togglePlayback = () => {
         if (isPlaying) {
             controls.pause();
