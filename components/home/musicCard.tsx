@@ -162,7 +162,7 @@ export const MusicCard = () => {
                 type="button"
                 onClick={togglePlayback}
                 disabled={!videoId || !isPlayerReady}
-                className={`flex mr-5 mt-2 h-48 w-48 shrink-0 items-center justify-center rounded-full shadow-sm transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 sm:h-10 sm:w-10 ${isPlaying
+                className={`flex mr-5 sm:mt-2 sm:h-8 h-8 w-8 sm:w-48 shrink-0 items-center justify-center rounded-full shadow-sm transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 ${isPlaying
                         ? " text-zinc-900 dark:text-white  "
                         : " text-zinc-900   dark:text-white "
                     }`}
