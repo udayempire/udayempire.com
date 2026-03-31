@@ -7,7 +7,7 @@ import { SocialIcons } from "../global/socialIcons";
 import ShimmerButton from "../ui/shimmer-button";
 import { Slide } from "../ui/slide";
 import Link from "next/link";
-import { MusicCard } from "./musicCard";
+// import { MusicCard } from "./musicCard";
 
 export const BioSection = () => {
   return (
@@ -37,11 +37,11 @@ export const BioSection = () => {
           <Slide delay={.25}>
             <p className="mt-2 mb-6 dark:text-zinc-100 text-zinc-800">I am open to work, freelance, or collaborate Just message me on any of my <Link href={'https://linktr.ee/udayempire'} className="underline underline-offset-4 text-blue-600" target="_blank" rel="noopener noreferrer">social links</Link></p>
           </Slide>
-          <Slide delay={.30}>
+          {/* <Slide delay={.30}>
             <div className="mt-8">
-              {/* <MusicCard /> */}
+              <MusicCard />
             </div>
-          </Slide>
+          </Slide> */}
         </div>
       </div>
       {/* Right Section*/}
