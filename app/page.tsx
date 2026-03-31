@@ -10,12 +10,17 @@ import ShimmerButton from "@/components/ui/shimmer-button";
 import GithubCalendarComponent from "@/components/home/githubCalendarComponent";
 import { Slide } from "@/components/ui/slide";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import { MusicCard } from "@/components/home/musicCard";
+
 
 export default function Home() {
   return (
     <div className=" w-10/12 h-full mx-auto flex flex-col items-center mt-16 xl:ml-48 ">
       <ScrollProgress />
       <BioSection />
+      <Slide delay={0.30} className="w-full">
+        <MusicCard />
+      </Slide>
       <Technologies />
       <Slide delay={.3}>
         <WorkExperience />
