@@ -20,7 +20,7 @@ const experiencesData: Experience[] = [
     company: "RealBros",
     date: "February 2026 - Present",
     role: "Full Stack Developer (Freelance)",
-    image: "/workExperience/stealth.svg",
+    image: "/workExperience/RealBro.png",
     description: [
       "Developed a web app for RealBros, a platform for real estate agents to manage their clients and properties.",
       "Responsible for the full stack development of the Admin Dashboard.",
@@ -209,8 +209,8 @@ const ExperienceCard = ({
           >
             <div className={`${geistVF.className} text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed flex flex-col gap-3 pt-4 pb-2 border-t border-zinc-100 dark:border-zinc-800/50 mt-4`}>
               {experience.description.map((line, i) => (
-                <p key={i} className="flex gap-3 items-start">
-                  <span className="text-blue-400 dark:text-blue-500 mt-1 text-[10px]">✦</span>
+                <p key={i} className="flex gap-3 items-centre">
+                  <span className="text-blue-400 dark:text-blue-500 text-[10px] bg-white h-1 w-1 rounded-full mt-[10px]"></span>
                   <span>{line}</span>
                 </p>
               ))}
