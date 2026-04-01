@@ -26,7 +26,7 @@ const experiencesData: Experience[] = [
       "Responsible for the full stack development of the Admin Dashboard.",
       "Built and maintained the backend infrastructure and the client-facing application."
     ],
-    technologies: ["NextJs", "ExpressJS", "React", "Node.js", "MongoDB", "TailwindCSS"],
+    technologies: ["NextJs", "ExpressJS", "React", "Node.js", "MongoDB", "TailwindCSS","AWS"],
   },
   {
     company: "Solana Turbine",
@@ -150,7 +150,7 @@ const ExperienceCard = ({
       <div ref={cardRef}>
         <div 
           data-active={isInView}
-          className="absolute -left-10 md:-left-[52.9px] top-6 w-3 h-3 rounded-full bg-zinc-200 dark:bg-zinc-800 border-2 border-white dark:border-zinc-950 z-10 transition-all duration-500 
+          className="absolute -left-9 md:-left-[52.9px] top-6 w-3 h-3 rounded-full bg-zinc-200 dark:bg-zinc-800 border-2 border-white dark:border-zinc-950 z-10 transition-all duration-500 
           group-hover:bg-cyan-400 group-hover:scale-150 group-hover:border-cyan-200 dark:group-hover:border-cyan-900 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.6)]
           data-[active=true]:bg-cyan-400 data-[active=true]:scale-150 data-[active=true]:border-cyan-200 dark:data-[active=true]:border-cyan-900 data-[active=true]:shadow-[0_0_15px_rgba(34,211,238,0.6)]" 
         />
