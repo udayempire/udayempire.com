@@ -7,10 +7,12 @@ import { geistVF } from "./fonts";
 import { Footer } from "@/components/global/Footer";
 import Script from "next/script";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
 export const metadata: Metadata = {
   title: "udayempire",
   description: "This is my personal website",
@@ -33,7 +35,16 @@ export default function RootLayout({
                gtag('config', 'G-KGPKJYBJR5');`}
         </Script>
       </head>
-      <body className={`${geistSans.variable} ${geistVF.className} dark:bg-black bg-white  antialiased`}>
+      <body className={`${geistSans.variable} ${geistVF.className} dark:bg-zinc-900 bg-orange-100 antialiased relative`}>
+        
+        {/* Grainy Noise Overlay */}
+        <div 
+          className="pointer-events-none fixed inset-0 z-[100] h-full w-full opacity-[0.2] dark:opacity-[0.07]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+          }}
+        />
+
         <ScrollProgress/>
         <ThemeProvider
           attribute="class"
