@@ -75,7 +75,7 @@ export const WorkExperience = () => {
           {/* Neon Bloom/Glow Layer*/}
           <motion.div
             style={{ height }}
-            className="absolute top-0 left-0 w-full bg-gradient-to-b from-cyan-500 via-blue-500 to-purple-600 blur-[6px] opacity-70"
+            className="absolute top-0 left-0 w-full bg-gradient-to-b from-emerald-400 dark:from-cyan-500 via-emerald-500 dark:via-blue-500 to-emerald-600 dark:to-purple-600 blur-[6px] opacity-70"
           />
 
           {/* Main Solid Energy Line */}
@@ -97,7 +97,7 @@ export const WorkExperience = () => {
                   repeat: Infinity,
                   ease: "easeOut",
                 }}
-                className="absolute w-6 h-6 rounded-full bg-purple-500"
+                className="absolute w-6 h-6 rounded-full bg-emerald-500 dark:bg-purple-500"
               />
 
               {/* Inner fast ripple */}
@@ -112,11 +112,11 @@ export const WorkExperience = () => {
                   ease: "easeOut",
                   delay: 0.2,
                 }}
-                className="absolute w-4 h-4 rounded-full bg-blue-400"
+                className="absolute w-4 h-4 rounded-full bg-emerald-400 dark:bg-blue-400"
               />
 
               {/* Glowing Core */}
-              <div className="relative w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_12px_4px_rgba(168,85,247,0.8)]" />
+              <div className="relative w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_12px_4px_rgba(16,185,129,0.8)] dark:shadow-[0_0_12px_4px_rgba(168,85,247,0.8)]" />
             </div>
           </motion.div>
         </div>
@@ -151,10 +151,10 @@ const ExperienceCard = ({
         <div 
           data-active={isInView}
           className="absolute -left-9 md:-left-[52.9px] top-6 w-3 h-3 rounded-full bg-zinc-200 dark:bg-zinc-800 border-2 border-white dark:border-zinc-950 z-10 transition-all duration-500 
-          group-hover:bg-cyan-400 group-hover:scale-150 group-hover:border-cyan-200 dark:group-hover:border-cyan-900 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.6)]
-          data-[active=true]:bg-cyan-400 data-[active=true]:scale-150 data-[active=true]:border-cyan-200 dark:data-[active=true]:border-cyan-900 data-[active=true]:shadow-[0_0_15px_rgba(34,211,238,0.6)]" 
+          group-hover:bg-emerald-500 dark:group-hover:bg-cyan-400 group-hover:scale-150 group-hover:border-emerald-300 dark:group-hover:border-cyan-900 group-hover:shadow-[0_0_15px_rgba(16,185,129,0.6)] dark:group-hover:shadow-[0_0_15px_rgba(34,211,238,0.6)]
+          data-[active=true]:bg-emerald-500 dark:data-[active=true]:bg-cyan-400 data-[active=true]:scale-150 data-[active=true]:border-emerald-300 dark:data-[active=true]:border-cyan-900 data-[active=true]:shadow-[0_0_15px_rgba(16,185,129,0.6)] dark:data-[active=true]:shadow-[0_0_15px_rgba(34,211,238,0.6)]" 
         />
-        <div className="bg-white dark:bg-zinc-900/40 p-5 md:p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800/80 shadow-sm hover:shadow-lg hover:border-blue-500/30 transition-all duration-300 relative overflow-hidden backdrop-blur-sm">
+        <div className="bg-white dark:bg-zinc-900/40 p-5 md:p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800/80 shadow-sm hover:shadow-lg hover:border-emerald-500/30 transition-all duration-300 relative overflow-hidden backdrop-blur-sm">
           
           <div
             className="flex flex-col md:flex-row md:items-start justify-between gap-4 cursor-pointer relative z-10"
@@ -177,12 +177,12 @@ const ExperienceCard = ({
 
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">
-                  <h3 className={`${ubuntu.className} text-lg md:text-xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-500 transition-colors`}>
+                  <h3 className={`${ubuntu.className} text-lg md:text-xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-500 transition-colors`}>
                     {experience.company}
                   </h3>
                   <motion.svg
                     animate={{ rotate: isOpen ? 180 : 0 }}
-                    className="w-4 h-4 text-zinc-400 group-hover:text-blue-500 transition-colors mt-0.5"
+                    className="w-4 h-4 text-zinc-400 group-hover:text-emerald-500 transition-colors mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -221,7 +221,7 @@ const ExperienceCard = ({
             {experience.technologies.map((tech, i) => (
               <span
                 key={i}
-                className="px-3 py-1 text-[11px] font-medium rounded-full bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:border-blue-400 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default"
+                className="px-3 py-1 text-[11px] font-medium rounded-full bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:border-emerald-500 dark:hover:border-blue-500 hover:text-emerald-600 dark:hover:text-blue-400 transition-colors cursor-default"
               >
                 {tech}
               </span>
