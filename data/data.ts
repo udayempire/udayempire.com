@@ -9,6 +9,16 @@ export const projectsData=[
         githubLink:"https://github.com/udayempire/ghost-wallet"
 
     },
+        {
+        imgLink:"/projects/goalify.png",
+        title:"Goalify",
+        desc:"Goalify is a platform where people can stake onchain on their goals and earn rewards based on them. A group of people stake in group goal and and Goal Completers gets their stake back along with somepercentage from Non Completers.",
+        Technologies:" Anchor, Rust, Typescript, NextJS, Tailwand, Vercel,",
+        role:"Full Stack x Solana",
+        // previewLink:"https://ghostwallet.udayempire.tech/",
+        githubLink:"https://github.com/udayempire/goalify"
+
+    },
     {
         imgLink:"/projects/techvilla.png",
         title:"Techvilla",
