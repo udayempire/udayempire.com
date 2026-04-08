@@ -15,10 +15,10 @@ export const SocialIcons = () => {
             <Image src="/icons/instagram.svg" width="30" height="40" alt="instagram" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
         </Link>
         <Link href={"https://www.discordapp.com/users/udayempire39"} target="_blank" >
-            <Image src="/icons/discord.svg" width="30" height="40" alt="instagram" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
+            <Image src="/icons/discord.svg" width="30" height="40" alt="Discord" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
         </Link>
         <Link href={"https://buymeacoffee.com/udayempire"} target="_blank" >
-            <Image src="/icons/buymecoffee.svg" width="30" height="40" alt="instagram" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
+            <Image src="/icons/buymecoffee.svg" width="30" height="40" alt="Buy Me a Coffee" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
         </Link>
     </div>
 }

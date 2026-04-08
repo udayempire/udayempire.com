@@ -25,6 +25,10 @@ export const Navbar = () => {
         {
             name: "Blogs",
             href: "/blogs"
+        },
+        {
+            name: "Contact",
+            href: "/contact"
         }
     ]
     return <div className={`flex justify-between md:justify-between items-center border-b border-zinc-700 p-4 mx-4 md:mx-8`}>
@@ -43,6 +47,7 @@ export const Navbar = () => {
                         <DropdownMenuItem onClick={()=>{router.push('/')}} >Home</DropdownMenuItem>
                         <DropdownMenuItem onClick={()=>{router.push('/projects')}} >Projects</DropdownMenuItem>
                         <DropdownMenuItem onClick={()=>{router.push('/blogs')}} >Blogs</DropdownMenuItem>
+                        <DropdownMenuItem onClick={()=>{router.push('/contact')}} >Contact</DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
@@ -50,13 +55,13 @@ export const Navbar = () => {
             <ModeToggle />
 
             </div>
+            <ul className="flex gap-5 items-center list-none m-0 p-0" role="navigation" aria-label="Main navigation">
             {data.map((link, index) => (
-                <li className="list-none" key={index}>
-                    <div className="hidden md:block">
-                    </div>
+                <li key={index}>
                     <Link className={`hidden md:block font-geist dark:hover:text-[#33E092]  font-semibold hover:text-blue-800 transition ease-in-out  transis text-md`} href={link.href}>{link.name}</Link>
                 </li>
             ))}
+            </ul>
         </div>
     </div>
 }

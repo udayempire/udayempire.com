@@ -5,7 +5,7 @@ export const projectsData=[
         desc:"A web-based crypto wallet that lets you create crypto accounts or check the balances, data, and other details of any public crypto address. Supports popular networks like Solana and Ethereum with a simple, intuitive interface.",
         Technologies:"Typescript, NextJS, Ethers lib, Web3.js, Tailwand, Vercel",
         role:"Full Stack Development",
-        previewLink:"https://ghostwallet.udayempire.tech/",
+        previewLink:"https://ghostwallet.udayempire.me",
         githubLink:"https://github.com/udayempire/ghost-wallet"
 
     },
