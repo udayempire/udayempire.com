@@ -1,4 +1,4 @@
-import { Laptop, Code, Github, Server, Database, Mouse, Headphones } from "lucide-react";
+import { Laptop, Code, Github, Server, Database, Mouse, Headphones, Monitor, Watch, Music, Terminal, TerminalSquare, Book, Gamepad } from "lucide-react";
 import React from "react";
 
 export interface Item {
@@ -10,48 +10,79 @@ export interface Item {
 
 export const gearsData: Item[] = [
   {
-    name: "MacBook Pro",
-    url: "https://www.apple.com/macbook-pro/",
-    remark: "Reliable and fast for web development.",
+    name: "HP Victus 5600H RTX 3050 24GB RAM 512GB Storage ",
+    url: "https://dl.flipkart.com/s/EjN54BNNNN",
+    remark: "My Love My Girlfriend.",
     icon: <Laptop className="w-4 h-4" />,
   },
   {
-    name: "Logitech MX Master 3",
-    url: "https://www.logitech.com/",
-    remark: "Best productivity mouse.",
+    name: "LG Ultragear 24GS65F",
+    url: "https://www.amazon.in/dp/B0DPQWPQN2?th=1",
+    remark: "Would Recommend 27 Inch 1440p+. One of my best investments tho.",
+    icon: <Monitor className="w-4 h-4" />,
+  },
+  {
+    name: "EvoFox Phantom Air",
+    url: "https://www.amazon.in/dp/B0DZ6TVMRW?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1",
+    remark: "Good at Its Price Point.",
     icon: <Mouse className="w-4 h-4" />,
   },
   {
-    name: "Sony WH-1000XM5",
-    url: "https://www.sony.com/",
-    remark: "For focused coding sessions.",
+    name: "Realme 7",
+    url: "https://dl.flipkart.com/s/9Ydn7EuuuN",
+    remark: "Highly Not Recommendable.",
+    icon: <Mouse className="w-4 h-4" />,
+  },
+  {
+    name: "Redmi Watch Move",
+    url: "https://dl.flipkart.com/s/EKvcZZNNNN",
+    remark: "Hasn't Disappointed Me Yet.",
+    icon: <Watch className="w-4 h-4" />,
+  },
+  {
+    name: "Realme Buds T200 Lite",
+    url: "https://dl.flipkart.com/s/9MCzqAuuuN",
+    // remark: "Not Recommended. Good For Low Budget",
+    icon: <Headphones className="w-4 h-4" />,
+  },
+  {
+    name: "Realme Wireless Buds 3",
+    url: "https://dl.flipkart.com/s/9M9VwkuuuN",
+    // remark: "Not Recommended. Good For Low Budget",
     icon: <Headphones className="w-4 h-4" />,
   },
 ];
 
 export const appsData: Item[] = [
   {
-    name: "Visual Studio Code",
+    name: "VS Code",
     url: "https://code.visualstudio.com/",
-    remark: "My go-to editor. Highly recommended with AI extensions.",
+    remark: "Might Switch to Neovim soon.",
     icon: <Code className="w-4 h-4" />,
   },
   {
-    name: "GitHub",
-    url: "https://github.com/",
-    remark: "Where I host all my projects.",
-    icon: <Github className="w-4 h-4" />,
+    name: "Ghostty",
+    url: "https://ghostty.org",
+    remark: "Terminal Where I Spend Most of My Time.",
+    icon: <TerminalSquare className="w-4 h-4" />,
   },
   {
-    name: "Vercel",
-    url: "https://vercel.com/",
-    remark: "Best platform for hosting Next.js apps.",
-    icon: <Server className="w-4 h-4" />,
+    name: "YT Music",
+    url: "https://music.youtube.com/@udayempire7563",
+    remark: "Go Home Music Player",
+    icon: <Music className="w-4 h-4" />,
   },
   {
-    name: "Supabase / Postgres",
-    url: "https://supabase.com/",
-    remark: "Database of choice.",
-    icon: <Database className="w-4 h-4" />,
+    name: "Notion",
+    url: "https://www.notion.com/",
+    remark: "Digital Brain.",
+    icon: <Book className="w-4 h-4" />,
   },
+  {
+    name: "Steam",
+    url: "https://steamcommunity.com/id/udayempire/",
+    remark: "I Love Story Games.",
+    icon: <Gamepad className="w-4 h-4" />,
+  },
+
 ];

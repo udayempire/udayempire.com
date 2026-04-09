@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ubuntu, geistVF } from "@/app/fonts";
 import { gearsData, appsData } from "@/data/gears";
 import Link from "next/link";
-import { Link2 } from "lucide-react";
+import { LinkIcon } from "lucide-react";
 
 export default function Me() {
   const containerVariants = {
@@ -89,14 +89,14 @@ export default function Me() {
                   {gearsData.map((gear, index) => (
                     <li key={index} className={`${geistVF.className} text-base md:text-lg text-zinc-700 dark:text-zinc-300 flex flex-row items-start sm:items-center gap-2`}>
                       <Link href={gear.url} target="_blank" rel="noopener noreferrer" className="mt-1 sm:mt-0 flex-shrink-0 text-emerald-500 hover:text-emerald-400 transition-colors">
-                        <Link2 className="w-4 h-4" />
+                        <LinkIcon className="w-4 h-4" />
                       </Link>
                       <div className="flex-1">
                         <span className="inline-flex items-center gap-2 align-middle">
                           <span className="font-semibold text-zinc-900 dark:text-zinc-100">{index + 1}.</span>
-                          <span className="text-zinc-500 dark:text-zinc-400">{gear.icon}</span>
-                          <span className="font-semibold text-zinc-900 dark:text-zinc-100">{gear.name}</span>
-                          {gear.remark && <span className="text-zinc-500 dark:text-zinc-400 hidden sm:inline">- {gear.remark}</span>}
+                          <span className="text-zinc-500 mb-1 dark:text-zinc-400">{gear.icon}</span>
+                          <span className="font-semibold text-sm text-zinc-900 uppercase dark:text-zinc-100">{gear.name}</span>
+                          {gear.remark && <span className="text-zinc-500 text-[14px] dark:text-zinc-400 hidden sm:inline">- {gear.remark}</span>}
                         </span>
                         {gear.remark && <div className="text-sm text-zinc-500 dark:text-zinc-400 sm:hidden block mt-1 ml-6">{gear.remark}</div>}
                       </div>
@@ -114,14 +114,14 @@ export default function Me() {
                   {appsData.map((app, index) => (
                     <li key={index} className={`${geistVF.className} text-base md:text-lg text-zinc-700 dark:text-zinc-300 flex flex-row items-start sm:items-center gap-2`}>
                       <Link href={app.url} target="_blank" rel="noopener noreferrer" className="mt-1 sm:mt-0 flex-shrink-0 text-emerald-500 hover:text-emerald-400 transition-colors">
-                        <Link2 className="w-4 h-4" />
+                        <LinkIcon className="w-4 h-4" />
                       </Link>
                       <div className="flex-1">
                         <span className="inline-flex items-center gap-2 align-middle">
                           <span className="font-semibold text-zinc-900 dark:text-zinc-100">{index + 1}.</span>
-                          <span className="text-zinc-500 dark:text-zinc-400">{app.icon}</span>
-                          <span className="font-semibold text-zinc-900 dark:text-zinc-100">{app.name}</span>
-                          {app.remark && <span className="text-zinc-500 dark:text-zinc-400 hidden sm:inline">- {app.remark}</span>}
+                          <span className="text-zinc-500  dark:text-zinc-400">{app.icon}</span>
+                          <span className="font-semibold text-zinc-900 uppercase text-[14px] dark:text-zinc-100">{app.name}</span>
+                          {app.remark && <span className="text-zinc-500 text-[14px] dark:text-zinc-400 hidden sm:inline">- {app.remark}</span>}
                         </span>
                         {app.remark && <div className="text-sm text-zinc-500 dark:text-zinc-400 sm:hidden block mt-1 ml-6">{app.remark}</div>}
                       </div>
