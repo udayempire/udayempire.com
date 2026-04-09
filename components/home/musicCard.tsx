@@ -95,17 +95,17 @@ export const MusicCard = () => {
       </div>
 
       {/* Play/Pause Button */}
-      <button
-        type="button"
-        onClick={togglePlayback}
-        disabled={!isPlayerReady}
-        className={`flex sm:mt-2 -mr-10 sm:h-8 h-8 w-8 sm:w-48 shrink-0 items-center justify-center rounded-full shadow-sm transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 ${
-          isPlaying
-            ? "text-zinc-900 dark:text-white"
-            : "text-zinc-900 dark:text-white"
-        }`}
-        aria-label={isPlaying ? "Pause" : "Play"}
-      >
+<button
+  type="button"
+  onClick={togglePlayback}
+  disabled={!isPlayerReady}
+  className={`flex sm:mt-2 h-8 w-8 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full shadow-sm transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 ${
+    isPlaying
+      ? "text-zinc-900 dark:text-white"
+      : "text-zinc-900 dark:text-white"
+  }`}
+  aria-label={isPlaying ? "Pause" : "Play"}
+>
         {isPlaying ? (
           <svg
             className="h-3.5 w-3.5 sm:h-10 sm:w-10"
