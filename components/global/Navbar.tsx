@@ -29,6 +29,10 @@ export const Navbar = () => {
         {
             name: "Contact",
             href: "/contact"
+        },
+        {
+            name: "Me",
+            href: "/me"
         }
     ]
     return <div className={`flex justify-between md:justify-between items-center border-b border-zinc-700 p-4 mx-4 md:mx-8`}>
