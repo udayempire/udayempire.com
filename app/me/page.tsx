@@ -7,7 +7,6 @@ import Link from "next/link";
 import { LinkIcon } from "lucide-react";
 import Image from "next/image";
 
-// ── Cozy floating sparkle particles ────────────────────────────────────────────
 const PARTICLES = [
     { delay: 0, x: "6%", size: 10, color: "text-amber-400/60 dark:text-amber-300/40" },
     { delay: 1.5, x: "18%", size: 7, color: "text-rose-400/60 dark:text-rose-300/40" },
@@ -94,7 +93,7 @@ export default function Me() {
             >
                                 {/* Gear + Apps card */}
                 <motion.div variants={item}>
-                    <div className="relative p-6 md:p-8 rounded-3xl border border-amber-200/70 dark:border-amber-800/40 bg-amber-50/80 dark:bg-stone-900/70 backdrop-blur-sm shadow-lg shadow-amber-200/30 dark:shadow-amber-900/20">
+                    <div className="relative p-6 md:p-8 rounded-3xl border dark:border-amber-800/40 bg-amber-50/80 dark:bg-stone-900/70 backdrop-blur-sm  dark:shadow-amber-900/20">
                         <div className="absolute top-5 right-6 text-2xl opacity-20 select-none pointer-events-none">🛠️</div>
 
                         <h2
@@ -195,7 +194,7 @@ export default function Me() {
 
                 {/* Story card */}
                 <motion.div variants={item}>
-                    <div className="relative p-6 md:p-8 rounded-3xl border border-amber-200/70 dark:border-amber-800/40 bg-amber-50/80 dark:bg-stone-900/70 backdrop-blur-sm shadow-lg shadow-amber-200/30 dark:shadow-amber-900/20">
+                    <div className="relative p-6 md:p-8 rounded-3xl border  dark:border-amber-800/40 bg-amber-50/80 dark:bg-stone-900/70 backdrop-blur-sm  dark:shadow-amber-900/20">
                         {/* decorative corner emoji */}
                         <div className="absolute top-5 right-6 text-2xl opacity-20 select-none pointer-events-none">📖</div>
 

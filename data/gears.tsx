@@ -1,4 +1,4 @@
-import { Laptop, Code, Mouse, Headphones, Monitor, Watch, Music, TerminalSquare, Book, Gamepad, AppWindow } from "lucide-react";
+import { Laptop, Code, Mouse, Headphones, Monitor, Watch, Music, TerminalSquare, Book, Gamepad, AppWindow, Smartphone } from "lucide-react";
 import React from "react";
 
 export interface Item {
@@ -31,7 +31,7 @@ export const gearsData: Item[] = [
     name: "Realme 7",
     url: "https://dl.flipkart.com/s/9Ydn7EuuuN",
     remark: "Highly Not Recommendable.",
-    icon: <Mouse className="w-4 h-4" />,
+    icon: <Smartphone className="w-4 h-4" />,
   },
   {
     name: "Redmi Watch Move",
@@ -42,13 +42,13 @@ export const gearsData: Item[] = [
   {
     name: "Realme Buds T200 Lite",
     url: "https://dl.flipkart.com/s/9MCzqAuuuN",
-    // remark: "Not Recommended. Good For Low Budget",
+    remark: "Sponsor me AirPods :p",
     icon: <Headphones className="w-4 h-4" />,
   },
   {
     name: "Realme Wireless Buds 3",
     url: "https://dl.flipkart.com/s/9M9VwkuuuN",
-    // remark: "Not Recommended. Good For Low Budget",
+    remark: "Sponsor me Sony Headphones :p",
     icon: <Headphones className="w-4 h-4" />,
   },
 ];
