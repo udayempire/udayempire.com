@@ -7,6 +7,8 @@ import { geistVF } from "./fonts";
 import { Footer } from "@/components/global/Footer";
 import Script from "next/script";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import { PageTransition } from "@/components/global/PageTransition";
+import { MusicProvider } from "@/components/global/MusicProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -90,7 +92,9 @@ export default function RootLayout({
           enableSystem
         >
           <Navbar />
-          {children}
+          <MusicProvider>
+            <PageTransition>{children}</PageTransition>
+          </MusicProvider>
           <Footer />
         </ThemeProvider>
       </body>
