@@ -109,7 +109,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="w-10/12 max-w-4xl mx-auto flex flex-col items-center mt-8 md:mt-16 pb-16 xl:ml-48">
+    <div className="w-full max-w-4xl mx-auto flex flex-col items-center mt-8 md:mt-16 pb-16 px-6">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
