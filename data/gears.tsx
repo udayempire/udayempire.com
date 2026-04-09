@@ -1,4 +1,4 @@
-import { Laptop, Code, Github, Server, Database, Mouse, Headphones, Monitor, Watch, Music, Terminal, TerminalSquare, Book, Gamepad } from "lucide-react";
+import { Laptop, Code, Mouse, Headphones, Monitor, Watch, Music, TerminalSquare, Book, Gamepad, AppWindow } from "lucide-react";
 import React from "react";
 
 export interface Item {
@@ -54,6 +54,12 @@ export const gearsData: Item[] = [
 ];
 
 export const appsData: Item[] = [
+  {
+    name: "Fedora Linux",
+    url: "https://fedoraproject.org",
+    remark: "Because Windows Sucks.",
+    icon: <AppWindow className="w-4 h-4" />,
+  },
   {
     name: "VS Code",
     url: "https://code.visualstudio.com/",
