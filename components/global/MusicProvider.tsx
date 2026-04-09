@@ -27,6 +27,7 @@ type MusicContextType = {
   duration: number;
   playerElementId: string;
   togglePlayback: () => void;
+  seekTo: (seconds: number) => void;
   progressPercent: number;
 };
 
@@ -96,6 +97,7 @@ type YTPlayer = {
   destroy: () => void;
   getCurrentTime: () => number;
   getDuration: () => number;
+  seekTo: (seconds: number, allowSeekAhead: boolean) => void;
 };
 
 const YT_API_SRC = "https://www.youtube.com/iframe_api";
@@ -210,6 +212,11 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
+  const seekTo = (seconds: number) => {
+    playerRef.current?.seekTo(seconds, true);
+    setCurrentTime(seconds);
+  };
+
   const progressPercent = useMemo(() => {
     if (isPlaying) {
       if (duration === 0) return 0;
@@ -231,6 +238,7 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
         duration,
         playerElementId: PLAYER_ELEMENT_ID,
         togglePlayback,
+        seekTo,
         progressPercent,
       }}
     >

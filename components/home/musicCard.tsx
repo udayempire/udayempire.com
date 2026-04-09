@@ -9,8 +9,10 @@ export const MusicCard = () => {
     data,
     isPlayerReady,
     isPlaying,
+    duration,
     playerElementId,
     togglePlayback,
+    seekTo,
     progressPercent,
   } = useMusicContext();
 
@@ -123,12 +125,43 @@ export const MusicCard = () => {
         )}
       </button>
 
-      {/* Progress Bar */}
-      <div className="absolute bottom-0 left-0 h-1 sm:h-1.5 w-full bg-black/5 dark:bg-black/40">
+      {/* Interactive Progress Bar / Scrubber */}
+      <div
+        role="slider"
+        aria-label="Seek music"
+        aria-valuenow={Math.round(progressPercent)}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        tabIndex={0}
+        className="absolute bottom-0 left-0 h-2 w-full cursor-pointer group/bar bg-black/5 dark:bg-black/40 hover:h-3 transition-all duration-150"
+        onClick={(e) => {
+          if (!isPlayerReady || duration === 0) return;
+          const rect = e.currentTarget.getBoundingClientRect();
+          const fraction = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+          seekTo(fraction * duration);
+        }}
+        onTouchEnd={(e) => {
+          if (!isPlayerReady || duration === 0) return;
+          const touch = e.changedTouches[0];
+          const rect = e.currentTarget.getBoundingClientRect();
+          const fraction = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
+          seekTo(fraction * duration);
+        }}
+        onKeyDown={(e) => {
+          if (!isPlayerReady || duration === 0) return;
+          const step = duration * 0.02; // 2% per key press
+          if (e.key === "ArrowRight") seekTo(Math.min(duration, (progressPercent / 100) * duration + step));
+          if (e.key === "ArrowLeft") seekTo(Math.max(0, (progressPercent / 100) * duration - step));
+        }}
+      >
+        {/* Fill */}
         <div
-          className="h-full rounded-r-full bg-black/50 backdrop-brightness-10 backdrop-saturate-150 transition-all duration-1000 ease-linear dark:bg-white/30 dark:backdrop-brightness-150"
+          className="h-full rounded-r-full bg-black/50 backdrop-brightness-10 backdrop-saturate-150 transition-[width] duration-500 ease-linear dark:bg-white/30 dark:backdrop-brightness-150 relative"
           style={{ width: `${progressPercent}%` }}
-        />
+        >
+          {/* Thumb dot — visible on hover */}
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-2.5 h-2.5 rounded-full bg-zinc-800 dark:bg-white opacity-0 group-hover/bar:opacity-100 transition-opacity duration-150 shadow-sm" />
+        </div>
       </div>
     </div>
   );
