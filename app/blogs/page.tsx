@@ -4,6 +4,7 @@
 import Link from "next/link"
 import { CalendarDays, ClockIcon } from "lucide-react"
 import Image from "next/image"
+import ShimmerButton from "@/components/ui/shimmer-button"
 
 const blogs = [
   {
@@ -57,6 +58,11 @@ export default function BlogsPage() {
           </div>
         </Link>
       ))}
+      <ShimmerButton href="/contact" className="shadow-xl px-4 py-2 mt-8 text-black " borderRadius="10px" shimmerColor="#702963" shimmerSize="2px" background="#fff">
+        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-black dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu ">
+          {`Done?  Want to Contact me  -->`}
+        </span>
+      </ShimmerButton>
     </div>
   )
 }

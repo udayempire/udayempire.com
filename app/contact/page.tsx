@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ubuntu, geistVF } from "@/app/fonts";
 import Link from "next/link";
+import ShimmerButton from "@/components/ui/shimmer-button";
 
 interface FormData {
   name: string;
@@ -91,7 +92,7 @@ export default function ContactPage() {
       });
 
       const result = await response.json();
-      
+
       if (result.success) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
@@ -208,12 +209,11 @@ export default function ContactPage() {
               type="submit"
               disabled={status === "sending"}
               className={`${ubuntu.className} group relative w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 overflow-hidden
-                ${
-                  status === "success"
-                    ? "bg-emerald-500 text-white"
-                    : status === "error"
-                      ? "bg-red-500 text-white"
-                      : "bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:shadow-lg hover:shadow-zinc-900/20 dark:hover:shadow-white/20 hover:scale-[1.02] active:scale-[0.98]"
+                ${status === "success"
+                  ? "bg-emerald-500 text-white"
+                  : status === "error"
+                    ? "bg-red-500 text-white"
+                    : "bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:shadow-lg hover:shadow-zinc-900/20 dark:hover:shadow-white/20 hover:scale-[1.02] active:scale-[0.98]"
                 }
                 disabled:opacity-60 disabled:cursor-not-allowed`}
             >
@@ -356,6 +356,11 @@ export default function ContactPage() {
           </div>
         </motion.div>
       </div>
+      <ShimmerButton href="/me" className="shadow-xl px-4 py-2 mt-12 text-black " borderRadius="10px" shimmerColor="#702963" shimmerSize="2px" background="#fff">
+        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-black dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu ">
+          {`Done?  Want to Know me Personally ?  -->`}
+        </span>
+      </ShimmerButton>
     </div>
   );
 }

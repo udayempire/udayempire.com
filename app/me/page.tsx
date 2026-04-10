@@ -6,6 +6,7 @@ import { gearsData, appsData } from "@/data/gears";
 import Link from "next/link";
 import { LinkIcon } from "lucide-react";
 import Image from "next/image";
+import ShimmerButton from "@/components/ui/shimmer-button";
 
 const PARTICLES = [
     { delay: 0, x: "6%", size: 10, color: "text-amber-400/60 dark:text-amber-300/40" },
@@ -91,7 +92,7 @@ export default function Me() {
                 animate="visible"
                 className="w-full flex flex-col gap-10"
             >
-                                {/* Gear + Apps card */}
+                {/* Gear + Apps card */}
                 <motion.div variants={item}>
                     <div className="relative p-6 md:p-8 rounded-3xl border dark:border-amber-800/40 bg-amber-50/80 dark:bg-stone-900/70 backdrop-blur-sm  dark:shadow-amber-900/20">
                         <div className="absolute top-7 right-3 md:right-6 text-2xl opacity-20 select-none pointer-events-none">🛠️</div>
@@ -99,7 +100,7 @@ export default function Me() {
                         <h2
                             className={`${ubuntu.className} text-2xl font-bold mb-8 text-amber-800 dark:text-amber-200 flex items-center gap-2`}
                         >
-                            Gears and Applications 
+                            Gears and Applications
                         </h2>
 
                         <div className="flex flex-col gap-10">
@@ -243,6 +244,11 @@ export default function Me() {
 
 
             </motion.div>
+            <ShimmerButton href="/" className="shadow-xl px-4 py-2 mt-12 text-black " borderRadius="10px" shimmerColor="#702963" shimmerSize="2px" background="#fff">
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-black dark:from-white dark:to-slate-900/10 lg:text-lg font-ubuntu ">
+                    {`Done Reading All ? Go to Homepage  -->`}
+                </span>
+            </ShimmerButton>
         </div>
     );
 }
