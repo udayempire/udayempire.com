@@ -94,6 +94,7 @@ type YTPlayer = {
   playVideo: () => void;
   pauseVideo: () => void;
   loadVideoById: (videoId: string) => void;
+  cueVideoById: (videoId: string) => void;
   destroy: () => void;
   getCurrentTime: () => number;
   getDuration: () => number;
@@ -155,7 +156,7 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
       // If there's already a player for the same video, do nothing
       if (playerRef.current) {
         try {
-          playerRef.current.loadVideoById(videoId);
+          playerRef.current.cueVideoById(videoId);
         } catch {
           // player was destroyed externally; recreate
           playerRef.current = null;

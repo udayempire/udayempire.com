@@ -47,7 +47,7 @@ const item = {
 
 export default function Me() {
     return (
-        <div className="relative w-full max-w-4xl mx-auto flex flex-col items-center mt-8 md:mt-16 pb-16 px-6">
+        <div className="relative w-full max-w-3xl mx-auto flex flex-col items-center mt-8 md:mt-16 pb-16 px-6">
 
             {/* Warm ambient glows — more colors */}
             <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
@@ -94,12 +94,12 @@ export default function Me() {
                                 {/* Gear + Apps card */}
                 <motion.div variants={item}>
                     <div className="relative p-6 md:p-8 rounded-3xl border dark:border-amber-800/40 bg-amber-50/80 dark:bg-stone-900/70 backdrop-blur-sm  dark:shadow-amber-900/20">
-                        <div className="absolute top-5 right-6 text-2xl opacity-20 select-none pointer-events-none">🛠️</div>
+                        <div className="absolute top-7 right-3 md:right-6 text-2xl opacity-20 select-none pointer-events-none">🛠️</div>
 
                         <h2
                             className={`${ubuntu.className} text-2xl font-bold mb-8 text-amber-800 dark:text-amber-200 flex items-center gap-2`}
                         >
-                            Gears and Applications ⚙️
+                            Gears and Applications 
                         </h2>
 
                         <div className="flex flex-col gap-10">
@@ -124,19 +124,19 @@ export default function Me() {
                                             >
                                                 <LinkIcon className="w-4 h-4" />
                                             </Link>
-                                            <div className="flex-1">
-                                                <span className="inline-flex flex-wrap items-center gap-2 align-middle">
-                                                    <span className="text-stone-400 dark:text-stone-500 text-sm font-semibold">{index + 1}.</span>
-                                                    <span className="text-amber-600 dark:text-amber-400">{gear.icon}</span>
-                                                    <span className="font-semibold uppercase text-sm text-stone-800 dark:text-stone-100">{gear.name}</span>
+                                            <div className="flex-1 min-w-0">
+                                                <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                                                    <span className="hidden md:inline-block text-stone-400 dark:text-stone-500 text-sm font-semibold shrink-0">{index + 1}.</span>
+                                                    <span className="text-amber-600 dark:text-amber-400 shrink-0">{gear.icon}</span>
+                                                    <span className="font-semibold uppercase text-sm text-stone-800 dark:text-stone-100 break-words">{gear.name}</span>
                                                     {gear.remark && (
-                                                        <span className="text-stone-500 dark:text-stone-400 text-[12px] hidden sm:inline">
+                                                        <span className="text-stone-500 dark:text-stone-400 text-xs hidden sm:inline break-words">
                                                             — {gear.remark}
                                                         </span>
                                                     )}
-                                                </span>
+                                                </div>
                                                 {gear.remark && (
-                                                    <div className="text-xs text-stone-500 dark:text-stone-400 sm:hidden mt-1 ml-6">
+                                                    <div className="text-xs text-stone-500 dark:text-stone-400 sm:hidden mt-1">
                                                         {gear.remark}
                                                     </div>
                                                 )}
@@ -167,19 +167,19 @@ export default function Me() {
                                             >
                                                 <LinkIcon className="w-4 h-4" />
                                             </Link>
-                                            <div className="flex-1">
-                                                <span className="inline-flex flex-wrap items-center gap-2 align-middle">
-                                                    <span className="text-stone-400 dark:text-stone-500 text-sm font-semibold">{index + 1}.</span>
-                                                    <span className="text-amber-600 dark:text-amber-400">{app.icon}</span>
-                                                    <span className="font-semibold uppercase text-sm text-stone-800 dark:text-stone-100">{app.name}</span>
+                                            <div className="flex-1 min-w-0">
+                                                <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                                                    <span className="hidden md:inline-block text-stone-400 dark:text-stone-500 text-sm font-semibold shrink-0">{index + 1}.</span>
+                                                    <span className="text-amber-600 dark:text-amber-400 shrink-0">{app.icon}</span>
+                                                    <span className="font-semibold uppercase text-sm text-stone-800 dark:text-stone-100 break-words">{app.name}</span>
                                                     {app.remark && (
-                                                        <span className="text-stone-500 dark:text-stone-400 text-[12px] hidden sm:inline">
+                                                        <span className="text-stone-500 dark:text-stone-400 text-xs hidden sm:inline break-words">
                                                             — {app.remark}
                                                         </span>
                                                     )}
-                                                </span>
+                                                </div>
                                                 {app.remark && (
-                                                    <div className="text-xs text-stone-500 dark:text-stone-400 sm:hidden mt-1 ml-6">
+                                                    <div className="text-xs text-stone-500 dark:text-stone-400 sm:hidden mt-1">
                                                         {app.remark}
                                                     </div>
                                                 )}
