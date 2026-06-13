@@ -18,7 +18,7 @@ interface Experience {
 const experiencesData: Experience[] = [
   {
     company: "RealBros",
-    date: "February 2026 - Present",
+    date: "January 2026 - April 2026",
     role: "Full Stack Developer (Freelance)",
     image: "/workExperience/RealBro.png",
     description: [
@@ -30,7 +30,7 @@ const experiencesData: Experience[] = [
   },
   {
     company: "Solana Turbine",
-    date: "June - Aug 2025",
+    date: "June 2025 - August 2025",
     role: "Solana Blockchain Development (Builder)",
     image: "/workExperience/turbine.jpg",
     description: [

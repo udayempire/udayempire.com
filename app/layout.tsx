@@ -16,7 +16,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Uday Kumar — Full Stack & Web3 Developer",
+  title: "Uday Kumar | Full Stack & Web3 Developer",
   description:
     "Portfolio of Uday Kumar. Full Stack Developer with 2+ years of experience building scalable web applications and Solana blockchain projects. Open to freelance, collaboration, and full-time roles.",
   keywords: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://udayempire.com",
     siteName: "Uday Kumar — Portfolio",
-    title: "Uday Kumar — Full Stack & Web3 Developer",
+    title: "Uday Kumar | Full Stack & Web3 Developer",
     description:
       "Full Stack Developer with 2+ years of experience building scalable web apps and Solana blockchain applications.",
     images: [
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Uday Kumar — Full Stack & Web3 Developer",
+    title: "Uday Kumar | Full Stack & Web3 Developer",
     description:
       "Full Stack Developer building scalable web apps and Solana blockchain applications.",
     creator: "@udayempire_",

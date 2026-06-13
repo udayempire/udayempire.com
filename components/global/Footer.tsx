@@ -12,14 +12,14 @@ export const Footer = () => {
                 <div className="hidden md:block font-light">© Made with &#10084; by Uday</div>
                 <div className="hidden md:flex items-center gap-3">
                     <div className="bg-green-700 animate-pulse rounded-full w-3 h-3"></div>
-                    <p className="font-medium md:text-md">Last Updated 08/04/26</p>
+                    <p className="font-medium md:text-md">Last Updated 13/06/26</p>
                 </div>
                 {/* Mobile View */}
                 <div className="md:hidden flex gap-3 justify-between items-center">
                     <div className="font-light text-xs">© Made with &#10084; by Uday</div>
                     <div className="flex items-center gap-3">
                         <div className="font-semibold bg-green-500 animate-pulse rounded-full w-2 h-2"></div>
-                        <p className="font-semibold text-xs">Last Updated 08/04/26</p>
+                        <p className="font-semibold text-xs">Last Updated 13/06/26</p>
                     </div>
                 </div>
             </div>
