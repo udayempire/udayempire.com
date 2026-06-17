@@ -4,6 +4,12 @@ import matter from "gray-matter";
 
 const blogsDirectory = path.join(process.cwd(), "content/blogs");
 
+export interface Heading {
+  text: string;
+  id: string;
+  level: number; // 2 = ##, 3 = ###
+}
+
 export interface BlogMeta {
   slug: string;
   title: string;
@@ -16,6 +22,28 @@ export interface BlogMeta {
 
 export interface Blog extends BlogMeta {
   content: string;
+  headings: Heading[];
+}
+
+/** Converts a heading string to a URL-safe id, e.g. "What is IP?" → "what-is-ip" */
+export function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
+}
+
+function extractHeadings(content: string): Heading[] {
+  const headingRegex = /^(#{2,3})\s+(.+)$/gm;
+  const headings: Heading[] = [];
+  let match;
+  while ((match = headingRegex.exec(content)) !== null) {
+    const text = match[2].trim();
+    headings.push({ text, id: slugify(text), level: match[1].length });
+  }
+  return headings;
 }
 
 export function getAllBlogs(): BlogMeta[] {
@@ -67,6 +95,7 @@ export function getBlogBySlug(slug: string): Blog | null {
     heroImage: data.heroImage,
     excerpt: data.excerpt,
     content,
+    headings: extractHeadings(content),
   };
 }
 

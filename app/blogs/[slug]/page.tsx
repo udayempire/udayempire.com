@@ -1,23 +1,44 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { getBlogBySlug, getAllBlogSlugs } from "@/lib/blogs";
+import { getBlogBySlug, getAllBlogSlugs, slugify } from "@/lib/blogs";
 import { CalendarDays, ClockIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { TableOfContents } from "@/components/blogs/TableOfContents";
+
+// Helper: extract plain text from React children (for heading IDs)
+function childText(children: React.ReactNode): string {
+  if (typeof children === "string") return children;
+  if (typeof children === "number") return String(children);
+  if (Array.isArray(children)) return children.map(childText).join("");
+  return "";
+}
 
 // Map standard markdown elements to your existing styled components
 const components = {
-  h2: ({ children }: { children?: React.ReactNode }) => (
-    <h2 className="text-2xl font-ubuntu mt-10 my-4 text-black dark:text-zinc-200">
-      {children}
-    </h2>
-  ),
-  h3: ({ children }: { children?: React.ReactNode }) => (
-    <h3 className="text-xl font-ubuntu mt-8 my-3 text-black dark:text-zinc-200">
-      {children}
-    </h3>
-  ),
+  h2: ({ children }: { children?: React.ReactNode }) => {
+    const id = slugify(childText(children));
+    return (
+      <h2
+        id={id}
+        className="text-2xl font-ubuntu mt-10 my-4 text-black dark:text-zinc-200 scroll-mt-28"
+      >
+        {children}
+      </h2>
+    );
+  },
+  h3: ({ children }: { children?: React.ReactNode }) => {
+    const id = slugify(childText(children));
+    return (
+      <h3
+        id={id}
+        className="text-xl font-ubuntu mt-8 my-3 text-black dark:text-zinc-200 scroll-mt-28"
+      >
+        {children}
+      </h3>
+    );
+  },
   p: ({ children }: { children?: React.ReactNode }) => (
     <p className="dark:text-zinc-300 text-zinc-600 text-lg my-3">{children}</p>
   ),
@@ -78,6 +99,21 @@ const components = {
       {children}
     </pre>
   ),
+  table: ({ children }: { children?: React.ReactNode }) => (
+    <div className="overflow-x-auto my-6">
+      <table className="w-full text-sm border-collapse">{children}</table>
+    </div>
+  ),
+  th: ({ children }: { children?: React.ReactNode }) => (
+    <th className="border border-zinc-300 dark:border-zinc-700 px-4 py-2 text-left font-semibold text-black dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800">
+      {children}
+    </th>
+  ),
+  td: ({ children }: { children?: React.ReactNode }) => (
+    <td className="border border-zinc-300 dark:border-zinc-700 px-4 py-2 dark:text-zinc-300 text-zinc-600">
+      {children}
+    </td>
+  ),
 };
 
 interface PageProps {
@@ -106,50 +142,45 @@ export default async function BlogPage({ params }: PageProps) {
   if (!blog) notFound();
 
   return (
-    <div className="w-10/12 mx-auto flex flex-col items-center mt-2 xl:ml-48">
-      <div className="flex justify-center mt-1">
-        <div className="mt-7">
-          <div className="w-full">
-            <div className="max-w-7xl">
-              {/* Blog Header */}
-              <div>
-                <h1 className="font-ubuntu text-4xl md:text-5xl w-full text-left text-black dark:text-zinc-200">
-                  {blog.title}
-                </h1>
-                <div className="mt-5 dark:text-zinc-300 text-zinc-600">
-                  <div className="flex justify-between">
-                    <div className="flex gap-2 px-5 py-2 items-center text-sm w-full">
-                      <CalendarDays />
-                      <div>Published on : {blog.date}</div>
-                    </div>
-                    <div className="flex gap-2 items-center text-sm w-full">
-                      <ClockIcon />
-                      <div>{blog.readTime}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <div className="w-full max-w-3xl xl:max-w-6xl mx-auto px-4 sm:px-6 mt-10 xl:flex xl:gap-12 xl:items-start">
+      {/* Left: sticky Table of Contents */}
+      <TableOfContents headings={blog.headings} />
 
-              {/* Blog Content */}
-              <div className="p-5 text-lg flex flex-col">
-                {/* Hero Image */}
-                <div className="flex justify-start h-44 md:h-80 my-3 rounded-md">
-                  <Image
-                    className="rounded-lg"
-                    src={blog.heroImage}
-                    width={1300}
-                    height={100}
-                    alt={blog.title}
-                  />
-                </div>
-
-                {/* MDX Content */}
-                <MDXRemote source={blog.content} components={components} />
-              </div>
+      {/* Right: Blog content */}
+      <article className="flex-1 min-w-0 pb-28 xl:pb-20">
+        {/* Blog Header */}
+        <h1 className="font-ubuntu text-4xl md:text-5xl w-full text-left text-black dark:text-zinc-200">
+          {blog.title}
+        </h1>
+        <div className="mt-5 dark:text-zinc-300 text-zinc-600">
+          <div className="flex gap-6">
+            <div className="flex gap-2 items-center text-sm">
+              <CalendarDays size={16} />
+              <span>Published on: {blog.date}</span>
+            </div>
+            <div className="flex gap-2 items-center text-sm">
+              <ClockIcon size={16} />
+              <span>{blog.readTime}</span>
             </div>
           </div>
         </div>
-      </div>
+
+        {/* Hero Image */}
+        <div className="flex justify-start h-44 md:h-80 my-6 rounded-md">
+          <Image
+            className="rounded-lg"
+            src={blog.heroImage}
+            width={1300}
+            height={100}
+            alt={blog.title}
+          />
+        </div>
+
+        {/* MDX Body */}
+        <div className="text-lg">
+          <MDXRemote source={blog.content} components={components} />
+        </div>
+      </article>
     </div>
   );
 }
