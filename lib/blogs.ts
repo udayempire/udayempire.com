@@ -40,10 +40,12 @@ export function getAllBlogs(): BlogMeta[] {
       } as BlogMeta;
     });
 
-  // Sort by date: newest first (simple string compare works for "27th May 2025" style)
-  // We'll use a custom sort by parsing the year from the date string
+  // Sort newest first; blogs missing a date fall to the end
   return blogs.sort((a, b) => {
-    const parseDate = (d: string) => new Date(d.replace(/(\d+)(st|nd|rd|th)/, "$1"));
+    const parseDate = (d: string | undefined) => {
+      if (!d) return new Date(0);
+      return new Date(d.replace(/(\d+)(st|nd|rd|th)/, "$1"));
+    };
     return parseDate(b.date).getTime() - parseDate(a.date).getTime();
   });
 }
