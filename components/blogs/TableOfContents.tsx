@@ -70,7 +70,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
   return (
     <>
       {/* ── Desktop: sticky left sidebar ── */}
-      <aside className="hidden xl:block w-56 shrink-0 sticky top-28 self-start">
+      <aside className="hidden xl:block w-56 shrink-0 sticky top-28 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-2">
         <p className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-4">
           On this page
         </p>
