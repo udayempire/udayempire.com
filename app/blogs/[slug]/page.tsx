@@ -22,7 +22,7 @@ const components = {
     return (
       <h2
         id={id}
-        className="text-lg md:text-xl font-ubuntu mt-10 my-4 text-black dark:text-zinc-200 scroll-mt-28"
+        className="text-xl md:text-2xl font-ubuntu mt-10 my-4 text-black dark:text-zinc-300 scroll-mt-28"
       >
         {children}
       </h2>
@@ -40,7 +40,7 @@ const components = {
     );
   },
   p: ({ children }: { children?: React.ReactNode }) => (
-    <p className="dark:text-zinc-300 text-zinc-600 text-md md:text-lg my-3">{children}</p>
+    <p className="dark:text-zinc-300 text-zinc-600 text-[18px] md:text-md my-3">{children}</p>
   ),
   ul: ({ children }: { children?: React.ReactNode }) => (
     <ul className="list-disc px-4 dark:text-zinc-300 text-zinc-600 text-lg space-y-1 my-3">
@@ -48,7 +48,7 @@ const components = {
     </ul>
   ),
   ol: ({ children }: { children?: React.ReactNode }) => (
-    <ol className="list-decimal px-4 dark:text-zinc-300 text-zinc-600 text-lg space-y-1 my-3">
+    <ol className="list-decimal px-4 dark:text-zinc-300 text-zinc-600 text-[18px] md:text-md space-y-1 my-3">
       {children}
     </ol>
   ),
@@ -56,7 +56,7 @@ const components = {
     <li className="dark:text-zinc-300 text-zinc-600">{children}</li>
   ),
   strong: ({ children }: { children?: React.ReactNode }) => (
-    <strong className="font-semibold text-black dark:text-zinc-100">
+    <strong className="font-semibold text-black dark:text-zinc-300">
       {children}
     </strong>
   ),
