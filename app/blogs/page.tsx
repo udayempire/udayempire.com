@@ -8,7 +8,7 @@ export default function BlogsPage() {
   const blogs = getAllBlogs();
 
   return (
-    <div className="p-10 flex flex-col items-center">
+    <div className="p-2 px-3 flex flex-col items-center">
       {blogs.map((blog) => (
         <Link
           href={`/blogs/${blog.slug}`}
