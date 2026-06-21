@@ -149,18 +149,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function BlogPage({ params }: PageProps) {
   const { slug } = await params;
   const blog = getBlogBySlug(slug);
-
   if (!blog) notFound();
-
   return (
     <div className="w-full max-w-3xl xl:max-w-6xl mx-auto px-8 md:px-4 sm:px-6 mt-10 xl:flex xl:gap-12 xl:items-start">
       {/* Left: sticky Table of Contents */}
       <TableOfContents headings={blog.headings} />
-
       {/* Right: Blog content */}
       <article className="flex-1 min-w-0 pb-28 xl:pb-20">
         {/* Blog Header */}
-        <h1 className="font-ubuntu px-2 text-2xl md:text-4xl w-full text-left text-black dark:text-zinc-200">
+        <h1 className="font-ubuntu  text-2xl md:text-4xl w-full text-left text-black dark:text-zinc-200">
           {blog.title}
         </h1>
         <div className="mt-5 dark:text-zinc-300 text-zinc-600">
