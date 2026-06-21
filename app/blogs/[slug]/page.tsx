@@ -164,10 +164,10 @@ export default async function BlogPage({ params }: PageProps) {
           {blog.title}
         </h1>
         <div className="mt-5 dark:text-zinc-300 text-zinc-600">
-          <div className="flex gap-6">
+          <div className="flex flex-col md:flex-row md:justify-between gap-4">
             <div className="flex gap-2 items-center text-sm">
               <CalendarDays size={16} />
-              <span>Published on: {blog.date}</span>
+              <span>Published : {blog.date}</span>
             </div>
             <div className="flex gap-2 items-center text-sm">
               <ClockIcon size={16} />
