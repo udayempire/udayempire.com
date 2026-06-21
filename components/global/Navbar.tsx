@@ -63,7 +63,7 @@ export const Navbar = () => {
             <ul className="flex gap-5 items-center list-none m-0 p-0" role="navigation" aria-label="Main navigation">
             {data.map((link, index) => (
                 <li key={index}>
-                    <Link className={`hidden md:block font-geist dark:hover:text-[#33E092]  font-semibold hover:text-blue-800 transition ease-in-out  transis text-md`} href={link.href}>{link.name}</Link>
+                    <Link className={`hidden md:block font-geist dark:hover:text-[#33E092]  font-semibold hover:text-green-600 transition ease-in-out  transis text-md`} href={link.href}>{link.name}</Link>
                 </li>
             ))}
             </ul>

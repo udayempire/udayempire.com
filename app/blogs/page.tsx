@@ -25,7 +25,7 @@ export default function BlogsPage() {
             />
             <p className="dark:text-zinc-400 text-zinc-600">
               {blog.excerpt}{" "}
-              <span className="text-white">Read More</span>
+              <span className="dark:text-white text-black">Read More</span>
             </p>
             <div className="flex justify-between w-full text-sm dark:text-zinc-300 text-zinc-600">
               <div className="flex gap-2 items-center text-xs">
