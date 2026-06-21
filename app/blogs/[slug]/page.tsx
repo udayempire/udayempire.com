@@ -22,7 +22,7 @@ const components = {
     return (
       <h2
         id={id}
-        className="text-2xl font-ubuntu mt-10 my-4 text-black dark:text-zinc-200 scroll-mt-28"
+        className="text-lg md:text-xl font-ubuntu mt-10 my-4 text-black dark:text-zinc-200 scroll-mt-28"
       >
         {children}
       </h2>
@@ -40,7 +40,7 @@ const components = {
     );
   },
   p: ({ children }: { children?: React.ReactNode }) => (
-    <p className="dark:text-zinc-300 text-zinc-600 text-lg my-3">{children}</p>
+    <p className="dark:text-zinc-300 text-zinc-600 text-md md:text-lg my-3">{children}</p>
   ),
   ul: ({ children }: { children?: React.ReactNode }) => (
     <ul className="list-disc px-4 dark:text-zinc-300 text-zinc-600 text-lg space-y-1 my-3">
@@ -153,14 +153,14 @@ export default async function BlogPage({ params }: PageProps) {
   if (!blog) notFound();
 
   return (
-    <div className="w-full max-w-3xl xl:max-w-6xl mx-auto px-4 sm:px-6 mt-10 xl:flex xl:gap-12 xl:items-start">
+    <div className="w-full max-w-3xl xl:max-w-6xl mx-auto px-8 md:px-4 sm:px-6 mt-10 xl:flex xl:gap-12 xl:items-start">
       {/* Left: sticky Table of Contents */}
       <TableOfContents headings={blog.headings} />
 
       {/* Right: Blog content */}
       <article className="flex-1 min-w-0 pb-28 xl:pb-20">
         {/* Blog Header */}
-        <h1 className="font-ubuntu text-4xl md:text-5xl w-full text-left text-black dark:text-zinc-200">
+        <h1 className="font-ubuntu px-2 text-2xl md:text-4xl w-full text-left text-black dark:text-zinc-200">
           {blog.title}
         </h1>
         <div className="mt-5 dark:text-zinc-300 text-zinc-600">

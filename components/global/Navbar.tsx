@@ -35,39 +35,41 @@ export const Navbar = () => {
             href: "/me"
         }
     ]
-    return <div className={`flex justify-between md:justify-between items-center border-b border-zinc-700 p-4 mx-4 md:mx-8`}>
-        <Link href={"/"} className="font-geist font-semibold cursor-pointer">udayempire</Link>
-        <div className="flex gap-2 md:gap-5 items-center ">
-            <div className=" md:hidden">
-                <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                        <Button size="icon" variant={"themeicon"}>
-                            <Menu className="h-[2.2rem] w-[1.2rem] " />
-                            {/* <SidebarClose className="h-[2.2rem] w-[1.2rem]" /> */}
-                        </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                        <DropdownMenuItem><ModeToggle></ModeToggle></DropdownMenuItem>
-                        <DropdownMenuItem onClick={()=>{router.push('/')}} >Home</DropdownMenuItem>
-                        <DropdownMenuItem onClick={()=>{router.push('/projects')}} >Projects</DropdownMenuItem>
-                        <DropdownMenuItem onClick={()=>{router.push('/blogs')}} >Blogs</DropdownMenuItem>
-                        <DropdownMenuItem onClick={()=>{router.push('/contact')}} >Contact</DropdownMenuItem>
-                        <DropdownMenuItem onClick={()=>{router.push('/me')}} >Me</DropdownMenuItem>
-                    </DropdownMenuContent>
-                </DropdownMenu>
+    return (
+        <div className="flex justify-between items-center border-b border-zinc-700 p-4 mx-4 md:mx-8">
+            <Link href="/" className="font-geist font-semibold cursor-pointer">udayempire</Link>
+            <div className="flex items-center gap-2 md:gap-5">
+                <div className="md:hidden">
+                    <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                            <Button size="icon" variant="themeicon">
+                                <Menu className="h-[2.2rem] w-[1.2rem]" />
+                            </Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                            <DropdownMenuItem><ModeToggle /></DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => router.push('/')}>Home</DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => router.push('/projects')}>Projects</DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => router.push('/blogs')}>Blogs</DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => router.push('/contact')}>Contact</DropdownMenuItem>
+                            <DropdownMenuItem onClick={() => router.push('/me')}>Me</DropdownMenuItem>
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+                </div>
+                <div className="hidden md:block">
+                    <ModeToggle />
+                </div>
+                <ul className="hidden md:flex gap-5 items-center list-none m-0 p-0" role="navigation" aria-label="Main navigation">
+                    {data.map((link, index) => (
+                        <li key={index}>
+                            <Link className="font-geist dark:hover:text-[#33E092] font-semibold hover:text-green-600 transition ease-in-out text-md" href={link.href}>
+                                {link.name}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
-            <div className="hidden md:block">
-            <ModeToggle />
-
-            </div>
-            <ul className="flex gap-5 items-center list-none m-0 p-0" role="navigation" aria-label="Main navigation">
-            {data.map((link, index) => (
-                <li key={index}>
-                    <Link className={`hidden md:block font-geist dark:hover:text-[#33E092]  font-semibold hover:text-green-600 transition ease-in-out  transis text-md`} href={link.href}>{link.name}</Link>
-                </li>
-            ))}
-            </ul>
         </div>
-    </div>
+    )
 }
 

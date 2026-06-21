@@ -16,7 +16,7 @@ export default function BlogsPage() {
           className="block mb-6"
         >
           <div className="flex flex-col items-start max-w-xl gap-4 border-b p-5 cursor-pointer">
-            <h1 className="font-ubuntu text-2xl md:text-4xl">{blog.title}</h1>
+            <h1 className="font-ubuntu text-2xl md:text-3xl">{blog.title}</h1>
             <Image
               src={blog.image}
               width={600}
