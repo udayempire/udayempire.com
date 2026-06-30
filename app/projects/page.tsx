@@ -21,6 +21,7 @@ export default function Projects() {
             githubLink={data.githubLink}
             imgLink={data.imgLink}
             role={data.role}
+            isInProgress={data.IsInProgress}
           />
         ))}
       </div>

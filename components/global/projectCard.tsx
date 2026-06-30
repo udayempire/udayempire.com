@@ -12,9 +12,10 @@ interface projectCardProps {
     githubLink?: string,
     imgLink: string,
     role?: string,
+    isInProgress?: boolean
 }
 
-export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink, imgLink, role }: projectCardProps) => {
+export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink, imgLink, role, isInProgress }: projectCardProps) => {
     const router = useRouter()
     
     // Safely split the technologies string into an array of individual items for badges
@@ -45,9 +46,19 @@ export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink
                             {title}
                         </h3>
                         {role && (
+                            <div className="flex justify-between">
                             <p className="text-sm mt-1 dark:text-zinc-300 text-zinc-800">
                                 <span className="font-medium dark:text-zinc-100">Role: </span>{role}
                             </p>
+                            {isInProgress && (
+                                <div className="flex items-center gap-3">
+                                    <h1 className="text-zinc-300">In Progress</h1>
+                                    <div className="bg-green-700 animate-pulse rounded-full w-3 h-3"></div>
+
+                                </div>
+                            )
+                            }
+                            </div>
                         )}
                     </div>
 
