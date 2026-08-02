@@ -28,9 +28,9 @@ export const gearsData: Item[] = [
     icon: <Mouse className="w-4 h-4" />,
   },
   {
-    name: "Realme 7",
+    name: "Iphone 17",
     url: "https://dl.flipkart.com/s/9Ydn7EuuuN",
-    remark: "Highly Not Recommendable.",
+    remark: "No words to describe this beauty.",
     icon: <Smartphone className="w-4 h-4" />,
   },
   {

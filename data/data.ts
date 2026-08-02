@@ -18,7 +18,7 @@ export const projectsData = [
         previewLink: "https://ghostwallet.udayempire.me",
         githubLink: "https://github.com/udayempire/ghost-wallet",
         IsInProgress: false
-    },
+        },
     {
         imgLink: "/projects/goalify.png",
         title: "Goalify",
