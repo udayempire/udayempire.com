@@ -10,6 +10,17 @@ export const projectsData = [
         IsInProgress: true
     },
     {
+        imgLink: "/projects/bhojpuristars.png",
+        title: "Bhojpuri stars",
+        desc: "Bhojpuri Stars is a music discovery website inspired by the viral music trend websites popular across social media. It brings Bhojpuri songs and artists into a modern, interactive interface using the YouTube Music API.",
+        Technologies: "TypeScript, Next.js, YT music API v3, Tailwand",
+        role: "Full Stack Development",
+        previewLink: "https://bhojpuristars.fun",
+        githubLink: "https://github.com/udayempire/bhojpuri-playlist",
+        IsInProgress: false
+    },
+    
+    {
         imgLink: "/projects/ghostwallet.png",
         title: "Ghost Wallet",
         desc: "A web-based crypto wallet that lets you create crypto accounts or check the balances, data, and other details of any public crypto address. Supports popular networks like Solana and Ethereum with a simple, intuitive interface.",
