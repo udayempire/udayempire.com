@@ -1,4 +1,4 @@
-import { Laptop, Code, Mouse, Headphones, Monitor, Watch, Music, TerminalSquare, Book, Gamepad, AppWindow, Smartphone } from "lucide-react";
+import { Laptop, Code, Mouse, Headphones, Monitor, Watch, Music, TerminalSquare, Book, Gamepad, AppWindow, Smartphone, Keyboard } from "lucide-react";
 import React from "react";
 
 export interface Item {
@@ -16,22 +16,28 @@ export const gearsData: Item[] = [
     icon: <Laptop className="w-4 h-4" />,
   },
   {
+    name: "Iphone 17",
+    url: "https://www.apple.com/in/shop/buy-iphone/iphone-17",
+    remark: "No words to describe this beauty.",
+    icon: <Smartphone className="w-4 h-4" />,
+  },
+  {
     name: "LG Ultragear 24GS65F",
     url: "https://www.amazon.in/dp/B0DPQWPQN2?th=1",
     remark: "Would Recommend 27 Inch 1440p+. One of my best investments tho.",
     icon: <Monitor className="w-4 h-4" />,
   },
   {
+    name: "Aula F75 Seiya switches",
+    url: "https://www.amazon.in/dp/B0GLH6M7DL?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1",
+    remark: "My First true mechanical keyboard.",
+    icon: <Keyboard className="w-4 h-4" />,
+  },
+  {
     name: "EvoFox Phantom Air",
     url: "https://www.amazon.in/dp/B0DZ6TVMRW?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1",
     remark: "Good at Its Price Point.",
     icon: <Mouse className="w-4 h-4" />,
-  },
-  {
-    name: "Iphone 17",
-    url: "https://dl.flipkart.com/s/9Ydn7EuuuN",
-    remark: "No words to describe this beauty.",
-    icon: <Smartphone className="w-4 h-4" />,
   },
   {
     name: "Redmi Watch Move",

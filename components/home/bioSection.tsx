@@ -26,12 +26,12 @@ export const BioSection = () => {
         <div className={`${geistVF.className} dark:text-zinc-400 text-zinc-600 text-md md:text-lg  leading-7`}>
           <Slide delay={.10}>
             <p className="mt-2 mb-6">
-              I’m a Full Stack Developer (2+ years) and Web3 Developer (1+ year), building scalable applications across modern web and blockchain ecosystems. I actively participate in hackathons, contribute to open source, and currently take on freelance projects while building my own products.
+            I’m a Full Stack & Applied AI Engineer, building scalable applications and AI-powered products across the modern web. I work with LLMs, real-time AI systems, and full-stack architectures, with experience in Web3 and blockchain development. I actively participate in hackathons, contribute to open source, and build products of my own.
             </p>
           </Slide>
-          <Slide delay={.20}>
+          <Slide delay={.20}> 
             <p className="mt-2 mb-6">
-              I&apos;m in my Pre Final year pursuing Bachelors of Technology in Computer Science with specialization in Artificial Intelligence and Machine Learning from LNCT Bhopal.
+              I&apos;m currently in my final year pursuing Bachelors of Technology in Computer Science with specialization in Artificial Intelligence and Machine Learning.
             </p>
           </Slide>
           <Slide delay={.25}>

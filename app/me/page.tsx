@@ -8,34 +8,6 @@ import { LinkIcon } from "lucide-react";
 import Image from "next/image";
 import ShimmerButton from "@/components/ui/shimmer-button";
 
-const PARTICLES = [
-    { delay: 0, x: "6%", size: 10, color: "text-amber-400/60 dark:text-amber-300/40" },
-    { delay: 1.5, x: "18%", size: 7, color: "text-rose-400/60 dark:text-rose-300/40" },
-    { delay: 0.8, x: "34%", size: 12, color: "text-violet-400/60 dark:text-violet-300/40" },
-    { delay: 2.4, x: "50%", size: 8, color: "text-teal-400/60 dark:text-teal-300/40" },
-    { delay: 1.1, x: "67%", size: 11, color: "text-orange-400/60 dark:text-orange-300/40" },
-    { delay: 2.8, x: "80%", size: 7, color: "text-pink-400/60 dark:text-pink-300/40" },
-    { delay: 0.4, x: "92%", size: 9, color: "text-sky-400/60 dark:text-sky-300/40" },
-];
-
-function FloatingParticle({ delay, x, size, color }: { delay: number; x: string; size: number; color: string }) {
-    return (
-        <motion.span
-            className={`pointer-events-none fixed select-none ${color}`}
-            style={{ left: x, bottom: -20, fontSize: size, zIndex: 0 }}
-            animate={{ y: [-20, -500], opacity: [0, 0.8, 0.8, 0] }}
-            transition={{
-                duration: 8,
-                delay,
-                repeat: Infinity,
-                ease: "easeInOut",
-            }}
-        >
-            ✦
-        </motion.span>
-    );
-}
-
 const container = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.13 } },
@@ -48,23 +20,7 @@ const item = {
 
 export default function Me() {
     return (
-        <div className="relative w-full max-w-3xl mx-auto flex flex-col items-center mt-8 md:mt-16 pb-16 px-6">
-
-            {/* Warm ambient glows — more colors */}
-            <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-                <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-amber-300/20 dark:bg-amber-600/10 rounded-full blur-3xl" />
-                <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-rose-300/20 dark:bg-rose-600/10 rounded-full blur-3xl" />
-                <div className="absolute top-1/2 left-0 w-64 h-64 bg-orange-200/30 dark:bg-orange-700/5 rounded-full blur-3xl" />
-                <div className="absolute top-1/4 right-0 w-72 h-72 bg-violet-200/20 dark:bg-violet-700/8 rounded-full blur-3xl" />
-                <div className="absolute bottom-10 left-1/3 w-60 h-60 bg-teal-200/20 dark:bg-teal-700/8 rounded-full blur-3xl" />
-                <div className="absolute top-3/4 right-1/3 w-48 h-48 bg-pink-200/20 dark:bg-pink-700/8 rounded-full blur-3xl" />
-            </div>
-
-            {/* Floating sparkles */}
-            {PARTICLES.map((p, i) => (
-                <FloatingParticle key={i} {...p} />
-            ))}
-
+        <div className="w-full max-w-3xl mx-auto flex flex-col items-center mt-8 md:mt-16 pb-16 px-6">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -72,7 +28,7 @@ export default function Me() {
                 className="text-center mb-12 space-y-2"
             >
                 <h1
-                    className={`${ubuntu.className} text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-amber-500 via-rose-500 to-violet-500 dark:from-amber-300 dark:via-rose-300 dark:to-violet-300 bg-clip-text text-transparent`}
+                    className={`${ubuntu.className} text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-800 bg-clip-text text-transparent text-amber-800 dark:text-amber-300`}
                 >
                     About Me
                 </h1>
