@@ -52,7 +52,7 @@ export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink
                             </p>
                             {isInProgress && (
                                 <div className="flex items-center gap-3">
-                                    <h1 className="text-zinc-300">In Progress</h1>
+                                    <h1 className="dark:text-zinc-300 text-zinc-700 font-mediumT">In Progress</h1>
                                     <div className="bg-green-700 animate-pulse rounded-full w-3 h-3"></div>
 
                                 </div>
