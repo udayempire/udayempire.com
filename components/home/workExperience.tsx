@@ -17,6 +17,19 @@ interface Experience {
 
 const experiencesData: Experience[] = [
   {
+    company: "plut0x",
+    date: "March 2026 - May 2026",
+    role: "Full Stack Developer",
+    image: "/workExperience/logo-blackbg.png",
+    description: [
+      "Built a new maker protection engine to prevent arbitrage exploitation.",
+      "Wrote an orderbook in TypeScript so orders could run continuously with an in-memory DB.",
+      "Built the frontend UI with backend integration for the market trading page.",
+      "Won a $200 agentic grant from Superteam India."
+    ],
+    technologies: ["TypeScript", "NextJs", "express", "rust", "anchor framework"],
+  },
+  {
     company: "RealBros",
     date: "January 2026 - April 2026",
     role: "Full Stack Developer (Freelance)",
