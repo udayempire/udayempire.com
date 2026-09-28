@@ -5,7 +5,7 @@ export const projectsData = [
         desc: "AI voice interview agent designed to conduct real-time AI interviews. The platform supports end-to-end interview sessions, allowing users & companies to configure custom templates, focus areas, & difficulty levels for a targeted evaluation experience.",
         Technologies: "TypeScript, Next.js, Bun, Express, PostgreSQL, Docker, Deepgram, Prisma, Groq, WebSocket, TurboRepo, LiveKits, Oracle Cloud",
         role: "Full Stack Development",
-        previewLink: "https://interviewlyy.udayempire.me",
+        previewLink: "https://interviewlyy.xyz",
         githubLink: "https://github.com/udayempire/interviewly",
         IsInProgress: true
     },
