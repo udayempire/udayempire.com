@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     "Portfolio",
     "Freelance Developer",
   ],
-  authors: [{ name: "Uday Kumar", url: "https://udayempire.com" }],
+  authors: [{ name: "Uday Kumar", url: "https://udayempire.me" }],
   creator: "Uday Kumar",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://udayempire.com",
+    url: "https://udayempire.me",
     siteName: "Uday Kumar — Portfolio",
     title: "Uday Kumar | Full Stack & Web3 Developer",
     description:
