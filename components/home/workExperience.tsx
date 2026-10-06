@@ -85,16 +85,16 @@ export const WorkExperience = () => {
       <div ref={containerRef} className="relative pl-12 md:pl-20 mt-4">
         <div className="absolute left-4 md:left-8 top-0 bottom-0 w-[3px] bg-zinc-200 dark:bg-zinc-800/50 rounded-full">
           
-          {/* Neon Bloom/Glow Layer*/}
+          {/* Bloom/Glow Layer */}
           <motion.div
             style={{ height }}
-            className="absolute top-0 left-0 w-full bg-gradient-to-b from-emerald-400 dark:from-cyan-500 via-emerald-500 dark:via-blue-500 to-emerald-600 dark:to-purple-600 blur-[6px] opacity-70"
+            className="absolute top-0 left-0 w-full bg-gradient-to-b from-orange-400 via-amber-400 to-orange-500 dark:from-emerald-800 dark:via-green-700 dark:to-emerald-900 blur-[6px] opacity-50 dark:opacity-70"
           />
 
           {/* Main Solid Energy Line */}
           <motion.div
             style={{ height }}
-            className="absolute top-0 left-0 w-full bg-gradient-to-b from-cyan-400 via-blue-500 to-purple-600 rounded-full"
+            className="absolute top-0 left-0 w-full bg-gradient-to-b from-orange-400 via-amber-400 to-orange-500 dark:from-emerald-800 dark:via-green-700 dark:to-emerald-900 rounded-full"
           >
             {/* The "Comet Head" / Playhead */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex items-center justify-center z-20">
@@ -110,7 +110,7 @@ export const WorkExperience = () => {
                   repeat: Infinity,
                   ease: "easeOut",
                 }}
-                className="absolute w-6 h-6 rounded-full bg-emerald-500 dark:bg-purple-500"
+                className="absolute w-6 h-6 rounded-full bg-orange-500 dark:bg-green-800"
               />
 
               {/* Inner fast ripple */}
@@ -125,11 +125,11 @@ export const WorkExperience = () => {
                   ease: "easeOut",
                   delay: 0.2,
                 }}
-                className="absolute w-4 h-4 rounded-full bg-emerald-400 dark:bg-blue-400"
+                className="absolute w-4 h-4 rounded-full bg-amber-400 dark:bg-emerald-700"
               />
 
               {/* Glowing Core */}
-              <div className="relative w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_12px_4px_rgba(16,185,129,0.8)] dark:shadow-[0_0_12px_4px_rgba(168,85,247,0.8)]" />
+              <div className="relative w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_10px_3px_rgba(251,146,60,0.55)] dark:shadow-[0_0_10px_3px_rgba(21,128,61,0.7)]" />
             </div>
           </motion.div>
         </div>
@@ -164,8 +164,8 @@ const ExperienceCard = ({
         <div 
           data-active={isInView}
           className="absolute -left-9 md:-left-[52.9px] top-6 w-3 h-3 rounded-full bg-zinc-200 dark:bg-zinc-800 border-2 border-white dark:border-zinc-950 z-10 transition-all duration-500 
-          group-hover:bg-emerald-500 dark:group-hover:bg-cyan-400 group-hover:scale-150 group-hover:border-emerald-300 dark:group-hover:border-cyan-900 group-hover:shadow-[0_0_15px_rgba(16,185,129,0.6)] dark:group-hover:shadow-[0_0_15px_rgba(34,211,238,0.6)]
-          data-[active=true]:bg-emerald-500 dark:data-[active=true]:bg-cyan-400 data-[active=true]:scale-150 data-[active=true]:border-emerald-300 dark:data-[active=true]:border-cyan-900 data-[active=true]:shadow-[0_0_15px_rgba(16,185,129,0.6)] dark:data-[active=true]:shadow-[0_0_15px_rgba(34,211,238,0.6)]" 
+          group-hover:bg-orange-400 dark:group-hover:bg-emerald-700 group-hover:scale-150 group-hover:border-orange-500 dark:group-hover:border-green-800 group-hover:shadow-[0_0_12px_rgba(251,146,60,0.5)] dark:group-hover:shadow-[0_0_12px_rgba(21,128,61,0.55)]
+          data-[active=true]:bg-orange-400 dark:data-[active=true]:bg-emerald-700 data-[active=true]:scale-150 data-[active=true]:border-orange-500 dark:data-[active=true]:border-green-800 data-[active=true]:shadow-[0_0_12px_rgba(251,146,60,0.5)] dark:data-[active=true]:shadow-[0_0_12px_rgba(21,128,61,0.55)]" 
         />
         <div className="bg-white dark:bg-zinc-900/40 p-5 md:p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800/80 shadow-sm hover:shadow-lg hover:border-emerald-500/30 transition-all duration-300 relative overflow-hidden backdrop-blur-sm">
           
