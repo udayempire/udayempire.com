@@ -1,17 +1,27 @@
 export const projectsData = [
     {
         imgLink: "/projects/interviewlyy-5.png",
-        title: "Interviewly",
+        title: "Interviewlyy (100+ users)",
         desc: "AI voice interview agent designed to conduct real-time AI interviews. The platform supports end-to-end interview sessions, allowing users & companies to configure custom templates, focus areas, & difficulty levels for a targeted evaluation experience.",
         Technologies: "TypeScript, Next.js, Bun, Express, PostgreSQL, Docker, Deepgram, Prisma, Groq, WebSocket, TurboRepo, LiveKits, Oracle Cloud",
-        role: "Full Stack Development",
+        role: "AI Full Stack Development",
         previewLink: "https://interviewlyy.xyz",
         githubLink: "https://github.com/udayempire/interviewly",
         IsInProgress: true
     },
     {
+        imgLink: "/projects/jobHunter.png",
+        title: "Job Hunter",
+        desc: "Job Hunter is a free, personal-first job-search workspace where people remember the jobs they found, track applications, and share useful opportunities with friends.",
+        Technologies: "TypeScript, Next.js, Bun, Express, PostgreSQL, OAuth, Tailwand",
+        role: "Full Stack Development",
+        // previewLink: "https://interviewlyy.xyz",
+        githubLink: "https://github.com/udayempire/interviewly",
+        IsInProgress: true
+    },
+    {
         imgLink: "/projects/bhojpuristars.png",
-        title: "Bhojpuri stars",
+        title: "Bhojpuri stars (1k+ visits)",
         desc: "Bhojpuri Stars is a music discovery website inspired by the viral music trend websites popular across social media. It brings Bhojpuri songs and artists into a modern, interactive interface using the YouTube Music API.",
         Technologies: "TypeScript, Next.js, YT music API v3, Tailwand",
         role: "Full Stack Development",

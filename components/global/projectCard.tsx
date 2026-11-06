@@ -38,11 +38,11 @@ export const ProjectCard = ({ title, desc, technologies, previewLink, githubLink
                 </div>
 
                 {/* Content Container */}
-                <div className="p-5 md:p-6 flex flex-col flex-grow gap-4">
+                <div className="p-5 md:p-6 flex flex-col flex-grow gap-4 cursor-pointer">
                     
                     {/* Header: Title & Role */}
                     <div>
-                        <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-500 transition-colors line-clamp-1">
+                        <h3 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-zinc-800 dark:group-hover:text-yellow-300 transition-colors line-clamp-1">
                             {title}
                         </h3>
                         {role && (
