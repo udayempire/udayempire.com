@@ -11,11 +11,14 @@ export const SocialIcons = () => {
         <Link href={"https://x.com/udayempire_"} target="_blank" >
             <Image src="/icons/X.svg" width="30" height="30" alt="X" className="hover:scale-[1.8]  transition-transform bg-black rounded-full" />
         </Link>
-        <Link href={"https://www.instagram.com/uexdevs/"} target="_blank" >
-            <Image src="/icons/instagram.svg" width="30" height="30" alt="instagram" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
-        </Link>
         <Link href={"https://www.discordapp.com/users/udayempire39"} target="_blank" >
             <Image src="/icons/discord.svg" width="30" height="30" alt="Discord" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
+        </Link>
+        <Link href={"https://www.instagram.com/udayempire_"} target="_blank" >
+            <Image src="/icons/instagram.svg" width="30" height="30" alt="instagram" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
+        </Link>
+        <Link href={"https://www.youtube.com/@udayempire07"} target="_blank" >
+            <Image src="/icons/youtube.svg" width="30" height="30" alt="youtube" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
         </Link>
         <Link href={"https://buymeacoffee.com/udayempire"} target="_blank" >
             <Image src="/icons/buymecoffee.svg" width="30" height="30" alt="Buy Me a Coffee" className="hover:scale-[1.7]  transition-transform bg-black rounded-full -p-4" />
