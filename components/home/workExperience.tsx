@@ -17,20 +17,33 @@ interface Experience {
 
 const experiencesData: Experience[] = [
   {
+    company: "plut0x",
+    date: "March 2026 - May 2026",
+    role: "Full Stack Developer",
+    image: "/workExperience/logo-blackbg.png",
+    description: [
+      "Built a new maker protection engine to prevent arbitrage exploitation.",
+      "Wrote an orderbook in TypeScript so orders could run continuously with an in-memory DB.",
+      "Built the frontend UI with backend integration for the market trading page.",
+      "Won a $200 agentic grant from Superteam India."
+    ],
+    technologies: ["TypeScript", "NextJs", "express", "rust", "anchor framework"],
+  },
+  {
     company: "RealBros",
-    date: "February 2026 - Present",
+    date: "January 2026 - April 2026",
     role: "Full Stack Developer (Freelance)",
-    image: "/workExperience/stealth.svg",
+    image: "/workExperience/RealBro.png",
     description: [
       "Developed a web app for RealBros, a platform for real estate agents to manage their clients and properties.",
       "Responsible for the full stack development of the Admin Dashboard.",
       "Built and maintained the backend infrastructure and the client-facing application."
     ],
-    technologies: ["NextJs", "ExpressJS", "React", "Node.js", "MongoDB", "TailwindCSS"],
+    technologies: ["NextJs", "ExpressJS", "React", "Node.js", "MongoDB", "TailwindCSS","AWS"],
   },
   {
     company: "Solana Turbine",
-    date: "June - Aug 2025",
+    date: "June 2025 - August 2025",
     role: "Solana Blockchain Development (Builder)",
     image: "/workExperience/turbine.jpg",
     description: [
@@ -72,16 +85,16 @@ export const WorkExperience = () => {
       <div ref={containerRef} className="relative pl-12 md:pl-20 mt-4">
         <div className="absolute left-4 md:left-8 top-0 bottom-0 w-[3px] bg-zinc-200 dark:bg-zinc-800/50 rounded-full">
           
-          {/* Neon Bloom/Glow Layer*/}
+          {/* Bloom/Glow Layer */}
           <motion.div
             style={{ height }}
-            className="absolute top-0 left-0 w-full bg-gradient-to-b from-cyan-500 via-blue-500 to-purple-600 blur-[6px] opacity-70"
+            className="absolute top-0 left-0 w-full bg-gradient-to-b from-orange-400 via-amber-400 to-orange-500 dark:from-emerald-800 dark:via-green-700 dark:to-emerald-900 blur-[6px] opacity-50 dark:opacity-70"
           />
 
           {/* Main Solid Energy Line */}
           <motion.div
             style={{ height }}
-            className="absolute top-0 left-0 w-full bg-gradient-to-b from-cyan-400 via-blue-500 to-purple-600 rounded-full"
+            className="absolute top-0 left-0 w-full bg-gradient-to-b from-orange-400 via-amber-400 to-orange-500 dark:from-emerald-800 dark:via-green-700 dark:to-emerald-900 rounded-full"
           >
             {/* The "Comet Head" / Playhead */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex items-center justify-center z-20">
@@ -97,7 +110,7 @@ export const WorkExperience = () => {
                   repeat: Infinity,
                   ease: "easeOut",
                 }}
-                className="absolute w-6 h-6 rounded-full bg-purple-500"
+                className="absolute w-6 h-6 rounded-full bg-orange-500 dark:bg-green-800"
               />
 
               {/* Inner fast ripple */}
@@ -112,11 +125,11 @@ export const WorkExperience = () => {
                   ease: "easeOut",
                   delay: 0.2,
                 }}
-                className="absolute w-4 h-4 rounded-full bg-blue-400"
+                className="absolute w-4 h-4 rounded-full bg-amber-400 dark:bg-emerald-700"
               />
 
               {/* Glowing Core */}
-              <div className="relative w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_12px_4px_rgba(168,85,247,0.8)]" />
+              <div className="relative w-2.5 h-2.5 rounded-full bg-white shadow-[0_0_10px_3px_rgba(251,146,60,0.55)] dark:shadow-[0_0_10px_3px_rgba(21,128,61,0.7)]" />
             </div>
           </motion.div>
         </div>
@@ -150,11 +163,11 @@ const ExperienceCard = ({
       <div ref={cardRef}>
         <div 
           data-active={isInView}
-          className="absolute -left-10 md:-left-[52.9px] top-6 w-3 h-3 rounded-full bg-zinc-200 dark:bg-zinc-800 border-2 border-white dark:border-zinc-950 z-10 transition-all duration-500 
-          group-hover:bg-cyan-400 group-hover:scale-150 group-hover:border-cyan-200 dark:group-hover:border-cyan-900 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.6)]
-          data-[active=true]:bg-cyan-400 data-[active=true]:scale-150 data-[active=true]:border-cyan-200 dark:data-[active=true]:border-cyan-900 data-[active=true]:shadow-[0_0_15px_rgba(34,211,238,0.6)]" 
+          className="absolute -left-9 md:-left-[52.9px] top-6 w-3 h-3 rounded-full bg-zinc-200 dark:bg-zinc-800 border-2 border-white dark:border-zinc-950 z-10 transition-all duration-500 
+          group-hover:bg-orange-400 dark:group-hover:bg-emerald-700 group-hover:scale-150 group-hover:border-orange-500 dark:group-hover:border-green-800 group-hover:shadow-[0_0_12px_rgba(251,146,60,0.5)] dark:group-hover:shadow-[0_0_12px_rgba(21,128,61,0.55)]
+          data-[active=true]:bg-orange-400 dark:data-[active=true]:bg-emerald-700 data-[active=true]:scale-150 data-[active=true]:border-orange-500 dark:data-[active=true]:border-green-800 data-[active=true]:shadow-[0_0_12px_rgba(251,146,60,0.5)] dark:data-[active=true]:shadow-[0_0_12px_rgba(21,128,61,0.55)]" 
         />
-        <div className="bg-white dark:bg-zinc-900/40 p-5 md:p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800/80 shadow-sm hover:shadow-lg hover:border-blue-500/30 transition-all duration-300 relative overflow-hidden backdrop-blur-sm">
+        <div className="bg-white dark:bg-zinc-900/40 p-5 md:p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800/80 shadow-sm hover:shadow-lg hover:border-emerald-500/30 transition-all duration-300 relative overflow-hidden backdrop-blur-sm">
           
           <div
             className="flex flex-col md:flex-row md:items-start justify-between gap-4 cursor-pointer relative z-10"
@@ -177,12 +190,12 @@ const ExperienceCard = ({
 
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">
-                  <h3 className={`${ubuntu.className} text-lg md:text-xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-500 transition-colors`}>
+                  <h3 className={`${ubuntu.className} text-lg md:text-xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-500 transition-colors`}>
                     {experience.company}
                   </h3>
                   <motion.svg
                     animate={{ rotate: isOpen ? 180 : 0 }}
-                    className="w-4 h-4 text-zinc-400 group-hover:text-blue-500 transition-colors mt-0.5"
+                    className="w-4 h-4 text-zinc-400 group-hover:text-emerald-500 transition-colors mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -209,8 +222,8 @@ const ExperienceCard = ({
           >
             <div className={`${geistVF.className} text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed flex flex-col gap-3 pt-4 pb-2 border-t border-zinc-100 dark:border-zinc-800/50 mt-4`}>
               {experience.description.map((line, i) => (
-                <p key={i} className="flex gap-3 items-start">
-                  <span className="text-blue-400 dark:text-blue-500 mt-1 text-[10px]">✦</span>
+                <p key={i} className="flex gap-3 items-centre">
+                  <span className="text-blue-400 dark:text-blue-500 text-[10px] bg-white h-1 w-1 rounded-full mt-[10px]"></span>
                   <span>{line}</span>
                 </p>
               ))}
@@ -221,7 +234,7 @@ const ExperienceCard = ({
             {experience.technologies.map((tech, i) => (
               <span
                 key={i}
-                className="px-3 py-1 text-[11px] font-medium rounded-full bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:border-blue-400 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default"
+                className="px-3 py-1 text-[11px] font-medium rounded-full bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:border-emerald-500 dark:hover:border-blue-500 hover:text-emerald-600 dark:hover:text-blue-400 transition-colors cursor-default"
               >
                 {tech}
               </span>

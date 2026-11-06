@@ -10,7 +10,7 @@ export default function Projects() {
       <Slide delay={0.1} className="w-full">
         <Heading className=" text-left  w-full mt-16" text="All Projects" />
       </Slide>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5">
+      <div className="grid grid-cols-1 gap-32 md:grid-cols-2 gap-y-5">
         {projectsData.map((data, index) => (
           <ProjectCard
             key={index}
@@ -21,6 +21,7 @@ export default function Projects() {
             githubLink={data.githubLink}
             imgLink={data.imgLink}
             role={data.role}
+            isInProgress={data.IsInProgress}
           />
         ))}
       </div>

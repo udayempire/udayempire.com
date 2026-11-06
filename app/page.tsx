@@ -37,7 +37,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10  gap-5">
           {projectsData.slice(0, 4).map((data, index) => (
             <ProjectCard key={index} title={data.title} desc={data.desc} technologies={data.Technologies} previewLink={data.previewLink}
-              githubLink={data.githubLink} imgLink={data.imgLink} role={data.role} />
+              githubLink={data.githubLink} imgLink={data.imgLink} role={data.role} isInProgress = {data.IsInProgress} />
           ))}
         </div>
 
