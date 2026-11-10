@@ -15,7 +15,7 @@ export const projectsData = [
         desc: "Job Hunter is a free, personal-first job-search workspace where people remember the jobs they found, track applications, and share useful opportunities with friends.",
         Technologies: "TypeScript, Next.js, Bun, Express, PostgreSQL, OAuth, Tailwand",
         role: "Full Stack Development",
-        // previewLink: "https://interviewlyy.xyz",
+        previewLink: "https://jobhunti.space",
         githubLink: "https://github.com/udayempire/interviewly",
         IsInProgress: true
     },
