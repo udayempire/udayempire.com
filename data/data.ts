@@ -11,9 +11,9 @@ export const projectsData = [
     },
     {
         imgLink: "/projects/jobHunter.png",
-        title: "Job Hunter",
-        desc: "Job Hunter is a free, personal-first job-search workspace where people remember the jobs they found, track applications, and share useful opportunities with friends.",
-        Technologies: "TypeScript, Next.js, Bun, Express, PostgreSQL, OAuth, Tailwand",
+        title: "Job Hunti",
+        desc: "Job Hunti Clip lets you save job opportunities while browsing. Open the Chrome extension on any job listing to capture details and save them to your workspace. Review and apply whenever you're ready, and share opportunities with friends.",
+        Technologies: "TypeScript, Next.js, Bun, Express, PostgreSQL, OAuth, Tailwand, Chrome Extension, Cloudflare Workers",
         role: "Full Stack Development",
         previewLink: "https://jobhunti.space",
         githubLink: "https://github.com/udayempire/interviewly",
