@@ -16,7 +16,7 @@ export const projectsData = [
         Technologies: "TypeScript, Next.js, Bun, Express, PostgreSQL, OAuth, Tailwand, Chrome Extension, Cloudflare Workers",
         role: "Full Stack Development",
         previewLink: "https://jobhunti.space",
-        githubLink: "https://github.com/udayempire/interviewly",
+        githubLink: "https://github.com/udayempire/job-hunter",
         IsInProgress: true
     },
     {
