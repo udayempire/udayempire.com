@@ -3,21 +3,43 @@ export const projectsData = [
         imgLink: "/projects/interviewlyy-5.png",
         title: "Interviewlyy (100+ users)",
         desc: "AI voice interview agent designed to conduct real-time AI interviews. The platform supports end-to-end interview sessions, allowing users & companies to configure custom templates, focus areas, & difficulty levels for a targeted evaluation experience.",
-        Technologies: "TypeScript, Next.js, Bun, Express, PostgreSQL, Docker, Deepgram, Prisma, Groq, WebSocket, TurboRepo, LiveKits, Oracle Cloud",
+        Technologies:
+            "TypeScript, Next.js, Bun, Express, PostgreSQL, Docker, Deepgram, Prisma, Groq, WebSocket, TurboRepo, LiveKits, Oracle Cloud",
         role: "AI Full Stack Development",
         previewLink: "https://interviewlyy.xyz",
         githubLink: "https://github.com/udayempire/interviewly",
-        IsInProgress: true
+        IsInProgress: true,
     },
     {
         imgLink: "/projects/jobHunter.png",
         title: "Job Hunti",
         desc: "Job Hunti Clip lets you save job opportunities while browsing. Open the Chrome extension on any job listing to capture details and save them to your workspace. Review and apply whenever you're ready, and share opportunities with friends.",
-        Technologies: "TypeScript, Next.js, Bun, Express, PostgreSQL, OAuth, Tailwand, Chrome Extension, Cloudflare Workers",
+        Technologies:
+            "TypeScript, Next.js, Bun, Express, PostgreSQL, OAuth, Tailwand, Chrome Extension, Cloudflare Workers",
         role: "Full Stack Development",
         previewLink: "https://jobhunti.space",
         githubLink: "https://github.com/udayempire/job-hunter",
-        IsInProgress: true
+        IsInProgress: true,
+    },
+    {
+        imgLink: "/projects/goalify.png",
+        title: "Goalify",
+        desc: "Goalify is a platform where people can stake onchain on their goals and earn rewards based on them. A group of people stake in group goal and and Goal Completers gets their stake back along with somepercentage from Non Completers.",
+        Technologies: " Anchor, Rust, Typescript, NextJS, Tailwand, Vercel,",
+        role: "Full Stack x Solana",
+        // previewLink:"https://ghostwallet.udayempire.tech/",
+        githubLink: "https://github.com/udayempire/goalify",
+    },
+    {
+        imgLink: "/projects/ghostwallet.png",
+        title: "Ghost Wallet",
+        desc: "A web-based crypto wallet that lets you create crypto accounts or check the balances, data, and other details of any public crypto address. Supports popular networks like Solana and Ethereum with a simple, intuitive interface.",
+        Technologies:
+            "Typescript, Javascript, BIP-39,  NextJS, Ethers lib, Web3.js, Tailwand, Vercel",
+        role: "Full Stack Development",
+        previewLink: "https://ghostwallet.udayempire.me",
+        githubLink: "https://github.com/udayempire/ghost-wallet",
+        IsInProgress: false,
     },
     {
         imgLink: "/projects/bhojpuristars.png",
@@ -27,29 +49,9 @@ export const projectsData = [
         role: "Full Stack Development",
         previewLink: "https://bhojpuristars.fun",
         githubLink: "https://github.com/udayempire/bhojpuri-playlist",
-        IsInProgress: false
+        IsInProgress: false,
     },
-    
-    {
-        imgLink: "/projects/ghostwallet.png",
-        title: "Ghost Wallet",
-        desc: "A web-based crypto wallet that lets you create crypto accounts or check the balances, data, and other details of any public crypto address. Supports popular networks like Solana and Ethereum with a simple, intuitive interface.",
-        Technologies: "Typescript, Javascript, BIP-39,  NextJS, Ethers lib, Web3.js, Tailwand, Vercel",
-        role: "Full Stack Development",
-        previewLink: "https://ghostwallet.udayempire.me",
-        githubLink: "https://github.com/udayempire/ghost-wallet",
-        IsInProgress: false
-        },
-    {
-        imgLink: "/projects/goalify.png",
-        title: "Goalify",
-        desc: "Goalify is a platform where people can stake onchain on their goals and earn rewards based on them. A group of people stake in group goal and and Goal Completers gets their stake back along with somepercentage from Non Completers.",
-        Technologies: " Anchor, Rust, Typescript, NextJS, Tailwand, Vercel,",
-        role: "Full Stack x Solana",
-        // previewLink:"https://ghostwallet.udayempire.tech/",
-        githubLink: "https://github.com/udayempire/goalify"
 
-    },
     {
         imgLink: "/projects/techvilla.png",
         title: "Techvilla",
@@ -57,8 +59,7 @@ export const projectsData = [
         Technologies: "Typescript, NextJS, Tailwand, Vercel",
         role: "Technical Lead and Frontend Development",
         previewLink: "https://techvilla.vercel.app/",
-        githubLink: "https://github.com/techvillaLnct/Techvilla-Web"
-
+        githubLink: "https://github.com/techvillaLnct/Techvilla-Web",
     },
     {
         imgLink: "/projects/eventsphere-2.png",
@@ -67,8 +68,7 @@ export const projectsData = [
         Technologies: "Vite, React, Javascript, Redux, Tailwand, Vercel",
         role: "Frontend Developement",
         previewLink: "https://eventsphere-lemon.vercel.app/",
-        githubLink: "https://github.com/udayempire/fibohacks-hackathon"
-
+        githubLink: "https://github.com/udayempire/fibohacks-hackathon",
     },
     {
         imgLink: "/projects/geotrack.png",
@@ -77,28 +77,27 @@ export const projectsData = [
         Technologies: "Typescript, ReactJs, Firebase, Prisma, Tailwand, Vercel",
         role: "Full Stack Development",
         previewLink: "https://gtrrack.vercel.app",
-        githubLink: "https://github.com/udayempire/gail-sih"
-
+        githubLink: "https://github.com/udayempire/gail-sih",
     },
     {
         imgLink: "/projects/quickpay.png",
         title: "Quickpay",
         desc: "Quickpay is a fake payment app I developed to explore full-stack technologies and a bank-like architecture. It allows users to add money from banks, transfer funds to other Quickpay accounts, and experiment with its features.",
-        Technologies: "Turborepo, Typescript, NextJs, PostgreSql, Docker, CI pipeline, Prisma, NextAuth, Tailwand, Vercel",
+        Technologies:
+            "Turborepo, Typescript, NextJs, PostgreSql, Docker, CI pipeline, Prisma, NextAuth, Tailwand, Vercel",
         role: "Full Stack Development",
         // previewLink:"https://github.com/udayempire/ueblogs",
-        githubLink: "https://github.com/udayempire/Quickpay-2"
-
+        githubLink: "https://github.com/udayempire/Quickpay-2",
     },
     {
         imgLink: "/projects/blog-writer-2.png",
         title: "Full Stack Blogging App",
         desc: "This app lets users write blogs and explore blogs shared by others in their personalized feed. Users can sign up and sign in using secure JWT authentication. The backend is hosted on an edge server, ensuring fast performance and scalability.",
-        Technologies: "Typescript, React, TailwandCSS, PostgreSql, Prisma, Vercel, Cloudflare Workers",
+        Technologies:
+            "Typescript, React, TailwandCSS, PostgreSql, Prisma, Vercel, Cloudflare Workers",
         role: "Full Stack Development",
         // previewLink:"https://github.com/udayempire/ueblogs",
-        githubLink: "https://github.com/udayempire/ueblogs"
-
+        githubLink: "https://github.com/udayempire/ueblogs",
     },
     {
         imgLink: "/projects/devsthanam.png",
@@ -107,8 +106,7 @@ export const projectsData = [
         Technologies: "Javascript, HTML, CSS, PHP",
         role: "Frontend Development",
         previewLink: "https://devsthanam.in.net/",
-        githubLink: "https://github.com/udayempire/devsthanam-landing.git"
-
+        githubLink: "https://github.com/udayempire/devsthanam-landing.git",
     },
     {
         imgLink: "/projects/spotify.png",
@@ -117,8 +115,7 @@ export const projectsData = [
         Technologies: "Javascript, HTML, CSS",
         role: "Frontend Development",
         // previewLink:"",
-        githubLink: "https://github.com/udayempire/Spotify-Clone"
-
+        githubLink: "https://github.com/udayempire/Spotify-Clone",
     },
     {
         imgLink: "/projects/flipkart.png",
@@ -127,8 +124,6 @@ export const projectsData = [
         Technologies: "HTML, CSS",
         role: "Frontend Development",
         // previewLink:"",
-        githubLink: "https://github.com/udayempire/Flipkart-Clone"
-
+        githubLink: "https://github.com/udayempire/Flipkart-Clone",
     },
-]
-
+];
