@@ -16,18 +16,18 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Uday Kumar | Full Stack AI Engineer & Web3 Developer",
+  title: "Uday Kumar | Full Stack AI Engineer",
   description:
-    "Portfolio of Uday Kumar. Full Stack Developer with 2+ years of experience building scalable web applications and Solana blockchain projects. Open to freelance, collaboration, and full-time roles.",
+    "Portfolio of Uday Kumar, a Full Stack AI Engineer building AI-powered products and scalable web applications. Open to freelance, collaboration, and full-time roles.",
   keywords: [
     "Uday Kumar",
+    "Full Stack AI Engineer",
+    "AI Engineer",
     "Full Stack Developer",
-    "Web3 Developer",
-    "Solana",
+    "LLM Applications",
     "React",
     "Next.js",
     "Portfolio",
-    "Freelance Developer",
   ],
   authors: [{ name: "Uday Kumar", url: "https://udayempire.me" }],
   creator: "Uday Kumar",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://udayempire.me",
     siteName: "Uday Kumar — Portfolio",
-    title: "Uday Kumar | Full Stack & Web3 Developer",
+    title: "Uday Kumar | Full Stack AI Engineer",
     description:
-      "Full Stack Developer with 2+ years of experience building scalable web apps and Solana blockchain applications.",
+      "Full Stack AI Engineer building AI-powered products and scalable web applications.",
     images: [
       {
         url: "https://github.com/udayempire.png",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Uday Kumar | Full Stack AI Engineer & Web3 Developer",
+    title: "Uday Kumar | Full Stack AI Engineer",
     description:
-      "Full Stack AI Engineer & Web3 Developer building scalable web apps and Solana blockchain applications.",
+      "Full Stack AI Engineer building AI-powered products and scalable web applications.",
     creator: "@udayempire_",
     images: ["https://github.com/udayempire.png"],
   },

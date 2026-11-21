@@ -32,8 +32,8 @@ const reviews = [
       img: "/icons/nodejs.svg",
     },
     {
-        name: "Tailwand",
-        img: "/icons/tailwand.svg",
+        name: "Tailwind",
+        img: "/icons/tailwind.svg",
     },
     {
       name: "express",
